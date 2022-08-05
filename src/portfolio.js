@@ -7,9 +7,9 @@ const header = {
 const about = {
   // all the properties are optional - can be left empty or deleted
   name: 'Michael Ross Tarr',
-  role: 'Freelance Fullstack Developer',
+  role: 'South African, Gamer and <Programmer/>',
   description:
-    'Adipisicing sit fugit ullam unde aliquid sequi Facilis soluta facilis perspiciatis corporis nulla aspernatur. Autem eligendi rerum delectus modi quisquam? Illo ut quasi nemo ipsa cumque perspiciatis! Maiores minima consectetur.',
+    'Currently studying BIS Multimedia at the University of Pretoria. Aiming to be a Fullstack Developer, but enjoy anything and everything tech related.',
   // resume: 'https://example.com',
   social: {
     linkedin: 'https://www.linkedin.com/in/michael-tarr-ab6625173/',

@@ -10,18 +10,20 @@
   --clr-bg-alt: #fff;
   --clr-fg: #555;
   --clr-fg-alt: #161616;
-  --clr-primary: #FF004D;
+  --clr-primary: #80ed99;
   --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  --clr-dark: #161616;
 }
 
 .dark {
   --clr-bg: #161616;
-  --clr-bg-alt: #FF004D;
+  --clr-bg-alt: #80ed99;
   --clr-fg: #fff;
   --clr-fg-alt: #fff;
-  --clr-primary: #FF004D;
+  --clr-primary: #80ed99;
   --shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    --clr-dark: #161616;
 }
 
 main {
@@ -127,6 +129,7 @@ main {
   background-color: var(--clr-bg-alt);
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
   border: 0;
+  color: var(--clr-dark)
 }
 
 .btn--plain:hover {
@@ -153,11 +156,32 @@ main {
 }
 
 ::-moz-selection {
-  color: #fff;
-  background: #FF004D;
+  color: var(--clr-dark);
+  background: var(--clr-primary);
 }
 
 ::selection {
-  color: #fff;
-  background: #FF004D;
+  color: var(--clr-dark);
+  background: var(--clr-primary);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  background-color: #161616;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #80ed99;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 3px solid transparent;
+}
+
+::-webkit-scrollbar-corner {
+  background: rgba(0, 0, 0, 0);
 }
