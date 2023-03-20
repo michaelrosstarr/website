@@ -12,7 +12,7 @@ const about = {
     'Currently studying BIS Multimedia at the University of Pretoria. Aiming to be a Fullstack Developer, but enjoy anything and everything tech related.',
   // resume: 'https://example.com',
   social: {
-    linkedin: 'https://www.linkedin.com/in/michael-tarr-ab6625173/',
+    linkedin: 'https://www.linkedin.com/in/michaelrosstarr/',
     github: 'https://github.com/michaelrosstarr',
     discord: 'https://discord.gg/wsTABaD47e',
     spotify: 'https://open.spotify.com/user/lbbhzepy2as86h1q6xs2bedms',
