@@ -65,18 +65,18 @@ const skills = [
   // if there are no skills, Skills section won't show up
   'HTML',
   'CSS',
-  'Bootstrap',
+  'TailwindsCSS',
   'JavaScript',
   'TypeScript',
-  'React',
+  'ReactJS',
   'Node.JS',
-  'Express',
-  'Discord.JS',
+  'Express.JS',
   'Git',
   'React Native',
-  'Wordpress',
-  'PHP',
-  'MongoDB'
+  'MongoDB',
+  'Firebase',
+  'NestJS',
+  'Nrwl'
 ]
 
 const contact = {
