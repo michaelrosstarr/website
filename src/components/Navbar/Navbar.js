@@ -74,7 +74,7 @@ const Navbar = () => {
           {/* eslint-disable   */}
           <div className='modal-backdrop' onClick={() => closeModal()}></div>
           {/* // eslint-disable */}
-          <div className={`color__selector__div animate__animated animate__fast ${colorAnimate}`} style={{ position: "fixed", top: 0, right: 0 }} onClick={() => closeModal()}>
+          <div className={`color__selector__div animate__animated animate__fast ${colorAnimate}`} style={{ position: "fixed", top: 0, right: 0, borderBottom: `2px ${cookies.color} solid` }} onClick={() => closeModal()}>
             {/* eslint-disable   */}
             <div className="inner__color_selector" onClick={e => e.stopPropagation()}>
               <Circle
