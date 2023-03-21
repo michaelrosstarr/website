@@ -1,4 +1,6 @@
+import { useState, useEffect } from 'react';
 import { useCookies } from 'react-cookie';
+import axios from 'axios';
 import Style from 'style-it';
 import { about } from '../../portfolio'
 import './About.css'
@@ -6,6 +8,15 @@ import './About.css'
 const About = () => {
   const { name, role, description, resume, social } = about
   const [cookies] = useCookies(['color']);
+  // const [spotify, setSpotify] = useState(null);
+
+  // useEffect(() => {
+  //   axios.get("https://std-api.michaelrosstarr.workers.dev/spotify").then((data) => {
+  //     if (data.data) {
+  //       setSpotify(data.data);
+  //     }
+  //   }).catch(() => setSpotify(null))
+  // }, [])
 
   return Style.it(`.link:hover {color: ${cookies.color}} .link:hover::before{background-color: ${cookies.color}} .link::before{background-color: ${cookies.color}}`,
     <div className='about center'>
@@ -17,6 +28,10 @@ const About = () => {
 
       {role && <h2 className='about__role'>A {role}.</h2>}
       <p className='about__desc'>{description && description}</p>
+
+      {/* {spotify && spotify.is_playing && <>
+        <p className='about__desc'>I am currently listneing to <a className="link" href={spotify.item.href}>{spotify.item.name}</a> on <i className="fa-brands fa-spotify fa-xl" style={{ color: '#1DB954' }} /></p>
+      </>} */}
 
       <div className='about__contact center'>
         {resume && (

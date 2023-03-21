@@ -16,7 +16,6 @@ const App = () => {
   const [cookies, setCookie] = useCookies(['color']);
 
   useEffect(() => {
-    console.log(cookies.color);
     if (!cookies.color) {
       setCookie('color', '#3a86ff');
     }
