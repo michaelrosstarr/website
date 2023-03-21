@@ -1,4 +1,6 @@
-import { useContext } from 'react'
+import { useContext, useEffect } from 'react'
+import { useCookies } from 'react-cookie';
+import Style from 'style-it';
 import { ThemeContext } from './contexts/theme'
 import Header from './components/Header/Header'
 import About from './components/About/About'
@@ -11,8 +13,16 @@ import './App.css'
 
 const App = () => {
   const [{ themeName }] = useContext(ThemeContext)
+  const [cookies, setCookie] = useCookies(['color']);
 
-  return (
+  useEffect(() => {
+    console.log(cookies.color);
+    if (!cookies.color) {
+      setCookie('color', '#3a86ff');
+    }
+  }, [])
+
+  return Style.it(`::selection, ::-moz-selection {color: var(--clr-dark);background-color: ${cookies.color};}`,
     <div id='top' className={`${themeName} app`}>
       <Header />
 

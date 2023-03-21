@@ -23,7 +23,7 @@
   --clr-primary: #80ed99;
   --shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-    --clr-dark: #161616;
+  --clr-dark: #161616;
 }
 
 main {
@@ -45,16 +45,12 @@ main {
 .center {
   display: flex;
   align-items: center;
+  /* gap: 2px; */
 }
 
 .link {
-  color: var(--clr-primary);
   padding: 0 0 0.3em 0;
   position: relative;
-}
-
-.link:hover {
-  color: var(--clr-primary);
 }
 
 .link::before {
@@ -65,7 +61,6 @@ main {
   height: 0.2em;
   position: absolute;
   bottom: 0;
-  background-color: var(--clr-primary);
   transition: width 0.2s ease-in;
 }
 
@@ -78,6 +73,30 @@ main {
   color: var(--clr-fg);
   text-transform: lowercase;
   font-weight: 500;
+  padding: 0 !important;
+}
+
+.nav__list-item {
+  display: flex;
+  align-items: center;
+}
+
+.color__selector:hover {
+  cursor: pointer;
+}
+
+.color__selector__div {
+  z-index: 9999999;
+  border-bottom: 2px var(--clr-fg-alt) solid;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.inner__color_selector {
+  margin-top: 12px;
+  margin-left: 12px;
+  padding: 5px;
 }
 
 .link--icon {
@@ -95,8 +114,6 @@ main {
 }
 
 .btn--outline {
-  color: var(--clr-primary);
-  border: 2px solid var(--clr-primary);
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -110,7 +127,6 @@ main {
 .btn--outline:before {
   content: '';
   position: absolute;
-  background-color: var(--clr-primary);
   right: 100%;
   bottom: 0;
   left: 0;
@@ -126,7 +142,7 @@ main {
 
 .btn--plain {
   text-transform: initial;
-  background-color: var(--clr-bg-alt);
+  /* background-color: var(--clr-bg-alt); */
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
   border: 0;
   color: var(--clr-dark)
@@ -137,7 +153,8 @@ main {
 }
 
 .btn--icon {
-  padding: 0;
+  /* padding: 0; */
+  transition: 0.1s
 }
 
 .btn--icon:hover,
@@ -155,16 +172,6 @@ main {
   }
 }
 
-::-moz-selection {
-  color: var(--clr-dark);
-  background: var(--clr-primary);
-}
-
-::selection {
-  color: var(--clr-dark);
-  background: var(--clr-primary);
-}
-
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
@@ -176,7 +183,7 @@ main {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #80ed99;
+  background-color: white;
   border-radius: 8px;
   cursor: pointer;
   border: solid 4px transparent;
@@ -189,4 +196,14 @@ main {
 
 ::-webkit-scrollbar-corner {
   background: rgba(0, 0, 0, 0);
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: transparent;
+  height: 100%;
+  width: 100vw;
+  overflow: hidden;
 }

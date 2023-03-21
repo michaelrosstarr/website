@@ -1,16 +1,12 @@
 const header = {
-  // all the properties are optional - can be left empty or deleted
   homepage: 'https://michaelrosstarr.com',
   title: 'MRT',
 }
 
 const about = {
-  // all the properties are optional - can be left empty or deleted
   name: 'Michael Ross Tarr',
   role: 'South African, Gamer and <Programmer/>',
-  description:
-    'Currently studying BIS Multimedia at the University of Pretoria. Aiming to be a Fullstack Developer, but enjoy anything and everything tech related.',
-  // resume: 'https://example.com',
+  description: "Hey 👋, I'm Michael, but I am also known as Sloth the Dev in some places 👀. I have been developing web applications for almost 3 years now, and I have loved every single bit of it. In my chill time, I enjoy playing video games, currently playing Hogwarts Legacy 🪄 and Subnatica 🐠. I also love my music. Whenever I'm at my computer, Spotify is open and is jamming some of my favourite tunes 🎧.",
   social: {
     linkedin: 'https://www.linkedin.com/in/michaelrosstarr/',
     github: 'https://github.com/michaelrosstarr',
@@ -21,8 +17,6 @@ const about = {
 }
 
 const projects = [
-  // projects can be added an removed
-  // if there are no projects, Projects section won't show up
   {
     name: 'BotGhost',
     description:
@@ -61,8 +55,6 @@ const projects = [
 ]
 
 const skills = [
-  // skills can be added or removed
-  // if there are no skills, Skills section won't show up
   'HTML',
   'CSS',
   'TailwindsCSS',
@@ -80,8 +72,7 @@ const skills = [
 ]
 
 const contact = {
-  // email is optional - if left empty Contact section won't show up
-  email: 'forward@sloththe.dev',
+  email: 'hello@michaelrosstarr.com',
 }
 
 export { header, about, projects, skills, contact }

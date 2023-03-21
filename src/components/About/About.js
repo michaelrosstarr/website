@@ -1,14 +1,17 @@
+import { useCookies } from 'react-cookie';
+import Style from 'style-it';
 import { about } from '../../portfolio'
 import './About.css'
 
 const About = () => {
   const { name, role, description, resume, social } = about
+  const [cookies] = useCookies(['color']);
 
-  return (
+  return Style.it(`.link:hover {color: ${cookies.color}} .link:hover::before{background-color: ${cookies.color}} .link::before{background-color: ${cookies.color}}`,
     <div className='about center'>
       {name && (
         <h1>
-          Hi, I am <span className='about__name'>{name}</span>.
+          Hi, I am <span className='about__name' style={{ color: `${cookies.color ? cookies.color : '--clr-primary'}` }}>{name}</span>.
         </h1>
       )}
 
@@ -31,6 +34,7 @@ const About = () => {
                 href={social.github}
                 aria-label='github'
                 className='link link--icon icon'
+                style={{}}
               >
                 {/* <GitHubIcon /> */}
                 <i className="fa-brands fa-github fa-xl" />
