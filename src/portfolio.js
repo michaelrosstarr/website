@@ -1,7 +1,7 @@
 const header = {
   // all the properties are optional - can be left empty or deleted
-  homepage: 'https://sloththe.dev',
-  title: 'STD.',
+  homepage: 'https://michaelrosstarr.com',
+  title: 'MRT',
 }
 
 const about = {
