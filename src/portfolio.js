@@ -6,7 +6,7 @@ const header = {
 const about = {
   name: 'Michael Ross Tarr',
   role: 'South African, Gamer and <Programmer/>',
-  description: "Hey 👋, I'm Michael, but I am also known as Sloth the Dev in some places 👀. 3rc year BIS Multimedia student at the University of Pretoria here! I have been developing web applications for almost 3 years now, and I have loved every single bit of it. In my chill time, I enjoy playing video games, currently playing Hogwarts Legacy 🪄 and Subnatica 🐠. I also love my music. Whenever I'm at my computer, Spotify is open and is jamming some of my favourite tunes 🎧.",
+  description: "Hey 👋, I'm Michael, but I am also known as Sloth the Dev in some places 👀. 3rd year BIS Multimedia student at the University of Pretoria here. I have been developing web applications for almost 3 years now, and I have loved every single bit of it. In my chill time, I enjoy playing video games, currently playing Hogwarts Legacy 🪄 and Subnatica 🐠. I also love my music. Whenever I'm at my computer, Spotify is open and is jamming some of my favourite tunes 🎧.",
   social: {
     linkedin: 'https://www.linkedin.com/in/michaelrosstarr/',
     github: 'https://github.com/michaelrosstarr',
@@ -55,7 +55,7 @@ const projects = [
     name: "University Notion",
     description: "My Notion page for all of my university modules",
     stack: ["Notion"],
-    livePreview: "https://uni.sloththe.dev
+    livePreview: "https://uni.sloththe.dev",
   }
 ]
 
