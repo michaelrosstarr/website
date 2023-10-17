@@ -10,7 +10,7 @@ const about = {
   social: {
     linkedin: 'https://www.linkedin.com/in/michaelrosstarr/',
     github: 'https://github.com/michaelrosstarr',
-    spotify: 'https://open.spotify.com/user/lbbhzepy2as86h1q6xs2bedms',
+    spotify: 'https://stats.fm/michaelrosstarr',
     twitter: 'https://twitter.com/michaelrosstarr',
   },
 }
