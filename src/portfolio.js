@@ -6,7 +6,7 @@ const header = {
 const about = {
   name: 'Michael Ross Tarr',
   role: 'South African, Gamer and <Programmer/>',
-  description: "Hey 👋, I'm Michael, but I am also known as Sloth in some places. I am currently in my final year of BIS Multimedia at the University of Pretoria. If you don't see me programming or studying, you can most likely find me on the hockey field, listening to music or playing video games.",
+  description: "Hey 👋, I'm Michael, but I am also known as Sloth in some places. I am currently in my final year of BIS Multimedia at the University of Pretoria. If you don't see me programming or studying, you can most likely find me on the hockey field, listening to music, playing video games, or rewatching all the Star Wars series and movies.",
   social: {
     linkedin: 'https://www.linkedin.com/in/michaelrosstarr/',
     github: 'https://github.com/michaelrosstarr',
