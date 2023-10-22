@@ -56,6 +56,12 @@ const projects = [
     description: "My Notion page for all of my university modules",
     stack: ["Notion"],
     livePreview: "https://uni.sloththe.dev",
+  },
+    {
+    name: "Status",
+    description: "A Discord server that gets status and alert messages from the major providers.",
+    stack: ["Discord", "ntfy", "n8n"],
+    livePreview: "https://discord.gg/pVH3tnUbDx",
   }
 ]
 
@@ -73,7 +79,10 @@ const skills = [
   'MongoDB',
   'Firebase',
   'NestJS',
-  'Nrwl'
+  'Nrwl',
+  'NextJS',
+  'Deno',
+  'Docker'
 ]
 
 const contact = {
