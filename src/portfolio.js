@@ -6,7 +6,7 @@ const header = {
 const about = {
   name: 'Michael Ross Tarr',
   role: 'South African, Gamer and <Programmer/>',
-  description: "Hey 👋, I'm Michael, but I am also known as Sloth the Dev in some places 👀. 3rd year BIS Multimedia student at the University of Pretoria here. I have been developing web applications for almost 3 years now, and I have loved every single bit of it. In my chill time, I enjoy playing video games, currently playing Hogwarts Legacy 🪄 and Subnatica 🐠. I also love my music. Whenever I'm at my computer, Spotify is open and is jamming some of my favourite tunes 🎧.",
+  description: "Hey 👋, I'm Michael, but I am also known as Sloth in some places. I am currently in my final year of BIS Multimedia at the University of Pretoria. If you don't see me programming or studying, you can most likely find me on the hockey field, listening to music or playing video games.",
   social: {
     linkedin: 'https://www.linkedin.com/in/michaelrosstarr/',
     github: 'https://github.com/michaelrosstarr',
@@ -18,42 +18,32 @@ const about = {
 const projects = [
   {
     name: 'BotGhost',
-    description:
-      'Freelance Developer at BotGhost. Developing frontend and backend applications.',
-    stack: ['React', 'CSS', 'Node.JS', 'Discord.JS', 'MongoDB'],
+    description: 'I am a freelance web developer at BotGhost, a no-code Discord bot builder currently serving over 200 000 users monthly. I develop frontend and backend additions for the platform.',
+    stack: ['React.JS', 'CSS', 'Node.JS', 'Discord.JS', 'MongoDB', 'TailwindCSS'],
     livePreview: 'https://botghost.com/',
   },
   {
     name: 'Hyper Layer',
-    description:
-      'Freelance Developer for Hyper Layer. Developing frontend applications.',
-    stack: ['CSS', 'Javascript', 'jQuery'],
+    description: 'I am a freelance developer at Hyper Layer, a leading South African hosting provider. Offering game servers, web hosting and dedicated servers.',
+    stack: ['CSS', 'Javascript', 'jQuery', 'NextJS', 'Redux'],
     livePreview: 'https://hyperlayer.net/',
   },
   {
     name: 'Beaches South Africa',
     description:
-      'Website, Mobile App and Admin Portal for listing all beaches in South Africa.',
+      'A project that is still work in progress, it is a mobile app and web portal to list all Beaches in South Africa, providing information about the beach.',
     stack: ['React', 'React Native', 'MongoDB', 'Firebase', 'Node.JS'],
     livePreview: 'https://beachsmart.org.za/',
   },
   {
     name: 'Nerd Network Digital',
-    description:
-      'Digital Development Agency',
-    stack: ['React', 'React Native', 'MongoDB', 'Node.JS', 'Wordpress'],
+    description: 'My freelance web development company, doing odd jobs for client across a wide variety of stacks. From Wordpress eCommerce stores, to fully fledged RCM (Recruitment Content Manager) systems.',
+    stack: ['React', 'React Native', 'MongoDB', 'Node.JS', 'Wordpress', 'WooCommerce'],
     livePreview: 'https://nerdnetwork.digital/',
   },
   {
-    name: 'Nerd_Bots',
-    description:
-      'Creation of Discord bots and Dashboards',
-    stack: ['React', 'React Native', 'MongoDB', 'Node.JS'],
-    livePreview: 'https://nerdbots.xyz/',
-  },
-  {
     name: "University Notion",
-    description: "My Notion page for all of my university modules",
+    description: "A Notion page containing all of my university notes, available to the public.",
     stack: ["Notion"],
     livePreview: "https://uni.sloththe.dev",
   },
@@ -74,15 +64,15 @@ const skills = [
   'ReactJS',
   'Node.JS',
   'Express.JS',
-  'Git',
   'React Native',
   'MongoDB',
   'Firebase',
   'NestJS',
-  'Nrwl',
   'NextJS',
   'Deno',
-  'Docker'
+  'Docker',
+  'Oracle Cloud',
+  'Microsoft Azure',
 ]
 
 const contact = {
