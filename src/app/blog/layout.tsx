@@ -16,6 +16,6 @@ export default function RootLayout({
     children: React.ReactNode
 }) {
     return (
-        <body className={`${outfit.className} bg-background max-w-6xl m-auto p-5`}>{children}</body>
+        <body className={outfit.className}>{children}</body>
     )
 }

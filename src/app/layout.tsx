@@ -18,7 +18,7 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className={`${outfit.className} bg-background max-w-6xl m-auto p-5`}>{children}</body>
+      <body className={outfit.className}>{children}</body>
     </html>
   )
 }

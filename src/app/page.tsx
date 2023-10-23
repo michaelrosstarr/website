@@ -14,7 +14,7 @@ export default async function Home() {
   const projects = await getProjects();
 
   return (
-    <>
+    <div className='bg-background max-w-6xl m-auto p-5'>
       <nav className='flex justify-between items-center'>
         <Link href='https://michaelrosstarr.com' className='text-4xl text-text font-bold'>MRT</Link>
         <div className='md:flex items-center gap-5 hidden'>
@@ -73,6 +73,6 @@ export default async function Home() {
           }
         </nav>
       </main>
-    </>
+    </div>
   )
 }
