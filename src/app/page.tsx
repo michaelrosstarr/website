@@ -42,15 +42,19 @@ export default async function Home() {
           <section id='projects' className='space-y-5'>
             <h3 className='font-semibold text-4xl text-text text-center'>my Projects</h3>
             <div className='grid gap-5 grid-cols-1 md:grid-cols-2'>
-              {projects.map((item: ProjectItem, index: number) => <div className='bg-third p-5 md:p-10 space-y-4 shadow hover:-translate-y-1 duration-200 block rounded-lg' key={index}>
-                <h4 className='text-text text-center text-2xl font-semibold'>{item.name}</h4>
-                <p className='text-text text-center text-lg line-clamp-3'>{item.description}</p>
-                <div className='flex gap-2 text-text text-sm justify-center flex-wrap'>
-                  {item.stack.map((stack: string, stackIndex: number) => <span key={stackIndex}>{stack}</span>)}
+              {projects.map((item: ProjectItem, index: number) => <div className='bg-third p-5 md:p-10 space-y-4 shadow hover:-translate-y-1 duration-200 block rounded-lg flex items-between justify-between flex-col' key={index}>
+                <div>
+                  <h4 className='text-text text-center text-2xl font-semibold'>{item.name}</h4>
+                  <p className='text-text text-center text-lg line-clamp-3'>{item.description}</p>
                 </div>
-                <div className='flex gap-5 justify-end'>
-                  <Link href={item.link} className='text-text hover:text-primary flex items-center hover:-translate-y-0.5 duration-100 gap-2'>Preview <FontAwesomeIcon icon={faArrowUpRightFromSquare} className='w-4 h-4' /></Link>
-                  <Link href={`/project/${item.id}`} className='text-text hover:text-primary flex items-center hover:-translate-y-0.5 duration-100 gap-1'>Read more <FontAwesomeIcon icon={faArrowRight} className='w-4 h-4' /></Link>
+                <div className='space-y-3'>
+                  <div className='flex gap-2 text-text text-sm justify-center flex-wrap'>
+                    {item.stack.map((stack: string, stackIndex: number) => <span key={stackIndex}>{stack}</span>)}
+                  </div>
+                  <div className='flex gap-5 justify-end'>
+                    <Link href={item.link} className='text-text hover:text-primary flex items-center hover:-translate-y-0.5 duration-100 gap-2'>Preview <FontAwesomeIcon icon={faArrowUpRightFromSquare} className='w-4 h-4' /></Link>
+                    <Link href={`/project/${item.id}`} className='text-text hover:text-primary flex items-center hover:-translate-y-0.5 duration-100 gap-1'>Read more <FontAwesomeIcon icon={faArrowRight} className='w-4 h-4' /></Link>
+                  </div>
                 </div>
               </div>)}
             </div>
