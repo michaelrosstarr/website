@@ -12,6 +12,11 @@ const nextConfig = {
                 protocol: 'https',
                 hostname: 's3.us-west-2.amazonaws.com',
                 pathname: '/**',
+            },
+            {
+                protocol: 'https',
+                hostname: 'acdn.sloththe.dev',
+                pathname: '/**',
             }
         ]
     }
