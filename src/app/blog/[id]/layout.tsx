@@ -1,8 +1,7 @@
 
 import { Outfit } from 'next/font/google'
 import '@std/app/globals.css'
-import { getPost, getProject } from '@std/utils/notion'
-import { PostItem, ProjectItem } from '@std/utils/interfaces'
+import { getPost } from '@std/utils/notion'
 import { Metadata } from 'next'
 
 const outfit = Outfit({ subsets: ['latin'] })
