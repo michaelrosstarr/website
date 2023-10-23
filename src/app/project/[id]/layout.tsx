@@ -15,7 +15,7 @@ export async function generateMetadata({ params }: MetadataProps): Promise<Metad
     const slug = params.id;
     const project = await getProject(slug) as ProjectItem[];
     return {
-        title: project[0].name
+        title: `${project[0].name} | Michael Ross Tarr`
     }
 }
 
