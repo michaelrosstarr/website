@@ -12,7 +12,7 @@ export default async function Post({ params }: { params: { id: string } }) {
     const post = await getPost(params.id);
 
     return (
-        <div className='bg-background'>
+        <div className='bg-background min-h-screen'>
             <div className='max-w-6xl m-auto p-5'>
                 <nav className='flex justify-between items-center'>
                     <Link prefetch={true} href='https://michaelrosstarr.com' className='text-4xl text-text font-bold'>MRT</Link>

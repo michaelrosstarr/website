@@ -14,7 +14,7 @@ export default async function Home() {
   const projects = await getProjects();
 
   return (
-    <div className='bg-background'>
+    <div className='bg-background min-h-screen'>
       <div className='max-w-6xl m-auto p-5'>
         <nav className='flex justify-between items-center'>
           <Link href='https://michaelrosstarr.com' className='text-4xl text-text font-bold'>MRT</Link>
