@@ -10,11 +10,11 @@ export default async function Blog() {
     const posts = await getPosts();
     const cookieStore = cookies();
     return (
-        <div className='bg-background min-h-screen'>
+        <div className='bg-background min-h-screen' id="top">
             <div className='max-w-6xl m-auto p-5'>
                 <nav className='flex justify-between items-center'>
                     <Link href='https://michaelrosstarr.com' prefetch={true} className='text-4xl text-text font-bold'>MRT</Link>
-                    <div className='md:flex items-center gap-5 hidden'>
+                    <div className='flex items-center gap-5'>
                         <Link href='/' prefetch={true} className='text-xl text-text duration-75 hover:text-primary'>go home</Link>
                     </div>
                 </nav>
@@ -46,6 +46,7 @@ export default async function Blog() {
                     </section>
                     <nav className='flex justify-center md:hidden text-text flex-col items-center gap-5'>
                         <Link prefetch={true} href='/' className='text-xl text-text duration-75 hover:text-primary'>go home</Link>
+                        <Link href='#top' className='text-xl text-text duration-75 hover:text-primary'>back to the top</Link>
                     </nav>
                 </main>
             </div>

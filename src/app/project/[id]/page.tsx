@@ -8,7 +8,7 @@ export default async function Project({ params }: { params: { id: string } }) {
     const project = await getProject(params.id);
 
     return (
-        <div className='bg-background min-h-screen'>
+        <div className='bg-background min-h-screen' id="#top">
             <div className='max-w-6xl m-auto p-5'>
                 <nav className='flex justify-between items-center'>
                     <Link href='https://michaelrosstarr.com' className='text-4xl text-text font-bold'>MRT</Link>
@@ -29,6 +29,7 @@ export default async function Project({ params }: { params: { id: string } }) {
                     <nav className='flex justify-center md:hidden text-text flex-col items-center gap-5'>
                         <Link href='/' className='text-xl text-text duration-75 hover:text-primary'>go home</Link>
                         <Link href='/blog' className='text-xl text-text duration-75 hover:text-primary'>my blog</Link>
+                        <Link href='#top' className='text-xl text-text duration-75 hover:text-primary'>back to the top</Link>
                     </nav>
                 </main>
             </div>

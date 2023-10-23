@@ -14,7 +14,7 @@ export default async function Home() {
   const projects = await getProjects();
 
   return (
-    <div className='bg-background min-h-screen'>
+    <div className='bg-background min-h-screen' id="top">
       <div className='max-w-6xl m-auto p-5'>
         <nav className='flex justify-between items-center'>
           <Link href='https://michaelrosstarr.com' className='text-4xl text-text font-bold'>MRT</Link>
@@ -76,6 +76,7 @@ export default async function Home() {
             {
               config.nav.map((item: NavItem, index: number) => <Link key={index} href={item.href} className='text-xl text-text duration-75 hover:text-primary'>{item.name}</Link>)
             }
+            <Link href='#top' className='text-xl text-text duration-75 hover:text-primary'>back to the top</Link>
           </nav>
         </main>
       </div>
