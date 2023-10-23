@@ -1,0 +1,149 @@
+{
+    "nav": [
+        {
+            "name": "about me",
+            "href": "#about",
+            "mobile": false
+        },
+        {
+            "name": "my projects",
+            "href": "#projects",
+            "mobile": false
+        },
+        {
+            "name": "get in touch",
+            "href": "#contact",
+            "mobile": false
+        },
+        {
+            "name": "my blog",
+            "href": "/blog",
+            "mobile": true
+        }
+    ],
+    "metadata": {
+        "/": {
+            "title": "Michael Ross Tarr",
+            "description": "Hey 👋, I'm Michael, but I am also known as Sloth in some places."
+        },
+        "/blog": {
+            "title": "my Blog | Michael Ross Tarr",
+            "description": "Hey 👋, welcome to my blog."
+        }
+    },
+    "about": {
+        "title": "Michael Ross Tarr",
+        "subtitle": "South African, Gamer and <Programmer/>",
+        "description": "Hey 👋, I'm Michael, but I am also known as Sloth in some places. I am currently in my final year of BIS Multimedia at the University of Pretoria. If you don't see me programming or studying, you can most likely find me on the hockey field, listening to music, playing video games, or rewatching all the Star Wars series and movies.",
+        "social": {
+            "linkedin": "https://www.linkedin.com/in/michaelrosstarr/",
+            "github": "https://github.com/michaelrosstarr",
+            "spotify": "https://stats.fm/michaelrosstarr",
+            "twitter": "https://twitter.com/michaelrosstarr",
+            "youtube": "https://www.youtube.com/michaelrosstarr"
+        }
+    },
+    "stack": [
+        {
+            "link": "https://docker.com/",
+            "image": "https://skillicons.dev/icons?i=docker",
+            "name": "docker"
+        },
+        {
+            "link": "https://azure.microsoft.com/en-us",
+            "image": "https://skillicons.dev/icons?i=azure",
+            "name": "azure"
+        },
+        {
+            "link": "https://cloudflare.com/",
+            "image": "https://skillicons.dev/icons?i=cloudflare",
+            "name": "cloudflare"
+        },
+        {
+            "link": "https://deno.com/",
+            "image": "https://skillicons.dev/icons?i=deno",
+            "name": "deno"
+        },
+        {
+            "link": "https://expressjs.com/",
+            "image": "https://skillicons.dev/icons?i=express",
+            "name": "express"
+        },
+        {
+            "link": "https://firebase.google.com/",
+            "image": "https://skillicons.dev/icons?i=firebase",
+            "name": "firebase"
+        },
+        {
+            "link": "https://cloud.google.com/",
+            "image": "https://skillicons.dev/icons?i=gcp",
+            "name": "gcp"
+        },
+        {
+            "link": "https://github.com/",
+            "image": "https://skillicons.dev/icons?i=github",
+            "name": "github"
+        },
+        {
+            "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+            "image": "https://skillicons.dev/icons?i=js",
+            "name": "js"
+        },
+        {
+            "link": "https://mongodb.com/",
+            "image": "https://skillicons.dev/icons?i=mongodb",
+            "name": "mongodb"
+        },
+        {
+            "link": "https://nestjs.com/",
+            "image": "https://skillicons.dev/icons?i=nestjs",
+            "name": "nestjs"
+        },
+        {
+            "link": "https://nextjs.org",
+            "image": "https://skillicons.dev/icons?i=nextjs",
+            "name": "nextjs"
+        },
+        {
+            "link": "https://nodejs.org/en",
+            "image": "https://skillicons.dev/icons?i=nodejs",
+            "name": "nodejs"
+        },
+        {
+            "link": "https://react.dev",
+            "image": "https://skillicons.dev/icons?i=react",
+            "name": "react"
+        },
+        {
+            "link": "https://tailwindcss.com/",
+            "image": "https://skillicons.dev/icons?i=tailwind",
+            "name": "tailwind"
+        },
+        {
+            "link": "https://typescriptlang.org/",
+            "image": "https://skillicons.dev/icons?i=ts",
+            "name": "ts"
+        },
+        {
+            "link": "https://workers.cloudflare.com/",
+            "image": "https://skillicons.dev/icons?i=workers",
+            "name": "workers"
+        },
+        {
+            "link": "https://vercel.com",
+            "image": "https://skillicons.dev/icons?i=vercel",
+            "name": "vercel"
+        },
+        {
+            "link": "https://sentry.io",
+            "image": "https://skillicons.dev/icons?i=sentry",
+            "name": "sentry"
+        }
+    ],
+    "contact": {
+        "email": {
+            "address": "hello@michaelrosstarr.com",
+            "text": "hello[at]michaelrosstarr[dot]com"
+        }
+    }
+}
