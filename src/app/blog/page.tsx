@@ -4,15 +4,17 @@ import { PostItem, PostTagItem, } from '@std/utils/interfaces';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight, } from '@fortawesome/free-solid-svg-icons';
 import { getPosts } from '@std/utils/notion';
+import { cookies } from 'next/headers'
 
 export default async function Blog() {
     const posts = await getPosts();
+    const cookieStore = cookies();
     return (
         <>
             <nav className='flex justify-between items-center'>
-                <Link href='https://michaelrosstarr.com' className='text-4xl text-text font-bold'>MRT</Link>
+                <Link href='https://michaelrosstarr.com' prefetch={true} className='text-4xl text-text font-bold'>MRT</Link>
                 <div className='md:flex items-center gap-5 hidden'>
-                    <Link href='/' className='text-xl text-text duration-75 hover:text-primary'>go home</Link>
+                    <Link href='/' prefetch={true} className='text-xl text-text duration-75 hover:text-primary'>go home</Link>
                 </div>
             </nav>
             <main className='mt-20 space-y-10 md:space-y-32'>
@@ -42,7 +44,7 @@ export default async function Blog() {
                     </div>
                 </section>
                 <nav className='flex justify-center md:hidden text-text flex-col items-center gap-5'>
-                    <Link href='/' className='text-xl text-text duration-75 hover:text-primary'>go home</Link>
+                    <Link prefetch={true} href='/' className='text-xl text-text duration-75 hover:text-primary'>go home</Link>
                 </nav>
             </main>
         </>

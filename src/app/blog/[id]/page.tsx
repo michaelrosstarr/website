@@ -17,9 +17,9 @@ export default async function Post({ params }: { params: { id: string } }) {
     return (
         <>
             <nav className='flex justify-between items-center'>
-                <Link href='https://michaelrosstarr.com' className='text-4xl text-text font-bold'>MRT</Link>
+                <Link prefetch={true} href='https://michaelrosstarr.com' className='text-4xl text-text font-bold'>MRT</Link>
                 <div className='md:flex items-center gap-5 hidden'>
-                    <Link href='/blog' className='text-xl text-text duration-75 hover:text-primary'>go back</Link>
+                    <Link prefetch={true} href='/blog' className='text-xl text-text duration-75 hover:text-primary'>go back</Link>
                 </div>
             </nav>
             <main className='mt-20 space-y-10'>
@@ -50,7 +50,7 @@ export default async function Post({ params }: { params: { id: string } }) {
                 </ReactMarkdown>
 
                 <nav className='flex justify-center md:hidden text-text flex-col items-center gap-5'>
-                    <Link href='/blog' className='text-xl text-text duration-75 hover:text-primary'>my blog</Link>
+                    <Link prefetch={true} href='/blog' className='text-xl text-text duration-75 hover:text-primary'>my blog</Link>
                 </nav>
             </main>
         </>

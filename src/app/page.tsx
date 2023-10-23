@@ -3,12 +3,14 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { NavItem, ProjectItem, StackItem } from '@std/utils/interfaces';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight, faArrowUpRightFromSquare, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight, faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import { faSpotify, faGithub, faLinkedin, faXTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { getProjects } from '@std/utils/notion';
+import { cookies } from 'next/headers';
 
 export default async function Home() {
 
+  const cookieStore = cookies();
   const projects = await getProjects();
 
   return (
