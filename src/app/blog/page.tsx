@@ -21,7 +21,7 @@ export default async function Blog() {
                 <main className='mt-20 space-y-10 md:space-y-32'>
                     <section id='about' className='space-y-8'>
                         <h1 className='font-bold text-5xl text-text text-center'>👋, welcome to my <span className='text-primary'>BLOG</span></h1>
-                        <p id='description' className='text-text text-center text-lg md:m-5'>I just blog about anything really, not explicitly technology or programming related.</p>
+                        <p id='description' className='text-text text-center text-lg md:m-5'>I just blog about anything really, anything that I find interesting or just want to share with the world, it goes here.</p>
                     </section>
                     <section id='posts' className='space-y-5'>
                         <h3 className='font-semibold text-4xl text-text text-center'>my Posts</h3>
