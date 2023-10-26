@@ -42,7 +42,7 @@ export default async function Home() {
           <section id='projects' className='space-y-5'>
             <h3 className='font-semibold text-4xl text-text text-center'>my Projects</h3>
             <div className='grid gap-5 grid-cols-1 md:grid-cols-2'>
-              {projects.map((item: ProjectItem, index: number) => <div className='bg-third p-5 md:p-10 space-y-4 shadow hover:-translate-y-1 duration-200 block rounded-lg flex items-between justify-between flex-col' key={index}>
+              {projects.map((item: ProjectItem, index: number) => <div className='bg-third p-5 md:p-10 space-y-4 shadow hover:-translate-y-1 duration-200 rounded-lg flex items-between justify-between flex-col' key={index}>
                 <div>
                   <h4 className='text-text text-center text-2xl font-semibold'>{item.name}</h4>
                   <p className='text-text text-center text-lg line-clamp-3'>{item.description}</p>

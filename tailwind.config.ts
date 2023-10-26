@@ -25,9 +25,9 @@ const config: Config = {
       purple: colors.purple,
       pink: colors.pink,
       red: colors.red,
-      background: "#161616",
+      background: "#191716",
       primary: "#2675f9",
-      third: "#191919",
+      third: "#282828",
       forth: "#0d1117",
       text: "#FFFFFF",
       social: {
