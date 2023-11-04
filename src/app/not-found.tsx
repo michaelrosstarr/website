@@ -5,7 +5,7 @@ export default async function NoExist() {
         <div className='bg-background min-h-screen'>
             <div className='max-w-6xl m-auto p-5'>
                 <nav className='flex justify-between items-center'>
-                    <Link href='https://michaelrosstarr.com' className='text-4xl text-text font-bold'>MRT</Link>
+                    <Link href='/' className='text-4xl text-text font-bold'>MRT</Link>
                     <div className='md:flex items-center gap-5 hidden'>
                         <Link href='/' className='text-xl text-text duration-75 hover:text-primary'>go home</Link>
                         <Link href='/blog' className='text-xl text-text duration-75 hover:text-primary'>my blog</Link>

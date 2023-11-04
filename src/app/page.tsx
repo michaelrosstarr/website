@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { NavItem, ProjectItem, StackItem } from '@std/utils/interfaces';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight, faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight, faArrowUpRightFromSquare, faBars } from '@fortawesome/free-solid-svg-icons';
 import { faSpotify, faGithub, faLinkedin, faXTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { getProjects } from '@std/utils/notion';
 import { cookies } from 'next/headers';
@@ -17,11 +17,14 @@ export default async function Home() {
     <div className='bg-background min-h-screen' id="top">
       <div className='max-w-6xl m-auto p-5'>
         <nav className='flex justify-between items-center'>
-          <Link href='https://michaelrosstarr.com' className='text-4xl text-text font-bold'>MRT</Link>
+          <Link href='/' className='text-4xl text-text font-bold'>MRT</Link>
           <div className='md:flex items-center gap-5 hidden'>
             {
               config.nav.map((item: NavItem, index: number) => <Link key={index} href={item.href} className='text-xl text-text duration-75 hover:text-primary'>{item.name}</Link>)
             }
+          </div>
+          <div className='md:hidden block'>
+            <Link href='#mobile-nav' className='text-text'><FontAwesomeIcon icon={faBars} className='w-8 h-8' /></Link>
           </div>
         </nav>
         <main className='mt-20 space-y-10 md:space-y-32'>
@@ -42,7 +45,7 @@ export default async function Home() {
           <section id='projects' className='space-y-5'>
             <h3 className='font-semibold text-4xl text-text text-center'>my Projects</h3>
             <div className='grid gap-5 grid-cols-1 md:grid-cols-2'>
-              {projects.map((item: ProjectItem, index: number) => <div className='bg-third p-5 md:p-10 space-y-4 shadow hover:-translate-y-1 duration-200 rounded-lg flex items-between justify-between flex-col' key={index}>
+              {projects.map((item: ProjectItem, index: number) => <div className='bg-cardBackground p-5 md:p-10 space-y-4 shadow hover:-translate-y-1 duration-200 rounded-lg flex items-between justify-between flex-col' key={index}>
                 <div>
                   <h4 className='text-text text-center text-2xl font-semibold'>{item.name}</h4>
                   <p className='text-text text-center text-lg line-clamp-3'>{item.description}</p>
@@ -72,7 +75,7 @@ export default async function Home() {
               <Link href={`mailto:${config.contact.email.address}`} className='text-text hover:text-primary text-lg flex items-center hover:-translate-y-0.5 duration-100 gap-2'>{config.contact.email.text}</Link>
             </div>
           </section>
-          <nav className='flex justify-center md:hidden text-text flex-col items-center gap-5'>
+          <nav id='mobile-nav' className='flex justify-center md:hidden text-text flex-col items-center gap-5'>
             {
               config.nav.map((item: NavItem, index: number) => <Link key={index} href={item.href} className='text-xl text-text duration-75 hover:text-primary'>{item.name}</Link>)
             }
