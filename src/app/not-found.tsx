@@ -14,8 +14,8 @@ export default async function NoExist() {
                 <main className='mt-20 space-y-10'>
                     <h1 className='font-bold text-5xl text-text text-center'>Seems you got abit <span className='text-primary'>lost...</span></h1>
                     <div className='flex gap-5 justify-center'>
-                        <Link href="/" className='text-text hover:text-primary flex items-center hover:-translate-y-0.5 duration-100 gap-2 text-xl'>go back home</Link>
-                        <Link href="/blog" className='text-text hover:text-primary flex items-center hover:-translate-y-0.5 duration-100 gap-2 text-xl'>or visit my blog</Link>
+                        <Link href="/" className='text-text hover:text-primary flex items-center gap-2 text-xl'>go back home</Link>
+                        <Link href="/blog" className='text-text hover:text-primary flex items-center gap-2 text-xl'>or visit my blog</Link>
                     </div>
                 </main>
             </div>

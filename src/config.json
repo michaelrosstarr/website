@@ -27,8 +27,12 @@
             "description": "Hey 👋, I'm Michael, but I am also known as Sloth in some places."
         },
         "/blog": {
-            "title": "my Blog | Michael Ross Tarr",
+            "title": "my Blog",
             "description": "Hey 👋, welcome to my blog."
+        },
+        "/cv": {
+            "title": "my CV",
+            "description": "Hey 👋, this is my CV. Have a look around."
         }
     },
     "about": {

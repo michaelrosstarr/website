@@ -55,8 +55,8 @@ export default async function Home() {
                     {item.stack.map((stack: string, stackIndex: number) => <span key={stackIndex}>{stack}</span>)}
                   </div>
                   <div className='flex gap-5 justify-end'>
-                    <Link href={item.link} className='text-text hover:text-primary flex items-center hover:-translate-y-0.5 duration-100 gap-2'>Preview <FontAwesomeIcon icon={faArrowUpRightFromSquare} className='w-4 h-4' /></Link>
-                    <Link href={`/project/${item.id}`} className='text-text hover:text-primary flex items-center hover:-translate-y-0.5 duration-100 gap-1'>Read more <FontAwesomeIcon icon={faArrowRight} className='w-4 h-4' /></Link>
+                    <Link href={item.link} className='text-text hover:text-primary flex items-center gap-2'>Preview <FontAwesomeIcon icon={faArrowUpRightFromSquare} className='w-4 h-4' /></Link>
+                    <Link href={`/project/${item.id}`} className='text-text hover:text-primary flex items-center gap-1'>Read more <FontAwesomeIcon icon={faArrowRight} className='w-4 h-4' /></Link>
                   </div>
                 </div>
               </div>)}
@@ -72,7 +72,7 @@ export default async function Home() {
           </section>
           <section id='contact'>
             <div className='flex gap-5 justify-center'>
-              <Link href={`mailto:${config.contact.email.address}`} className='text-text hover:text-primary text-lg flex items-center hover:-translate-y-0.5 duration-100 gap-2'>{config.contact.email.text}</Link>
+              <Link href={`mailto:${config.contact.email.address}`} className='text-text hover:text-primary text-lg flex items-center gap-2'>{config.contact.email.text}</Link>
             </div>
           </section>
           <nav id='mobile-nav' className='flex justify-center md:hidden text-text flex-col items-center gap-5'>

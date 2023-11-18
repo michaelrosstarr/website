@@ -25,6 +25,7 @@ const config: Config = {
       purple: colors.purple,
       pink: colors.pink,
       red: colors.red,
+      white: colors.white,
       background: "#001939",
       // cardBackground: "#042335",
       cardBackground: "#000c1c",

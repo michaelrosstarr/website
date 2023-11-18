@@ -14,7 +14,7 @@ export async function generateMetadata({ params }: MetadataProps): Promise<Metad
     const slug = params.id;
     const post = await getPost(slug) as any;
     return {
-        title: `${post.metadata.title} | Michael Ross Tarr`,
+        title: `${post.metadata.title}`,
         description: post.metadata.description
     }
 }

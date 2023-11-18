@@ -20,12 +20,28 @@ export default async function Blog() {
                 </nav>
                 <main className='mt-20 space-y-10 md:space-y-32'>
                     <section id='about' className='space-y-8'>
-                        <h1 className='font-bold text-5xl text-text text-center'>👋, welcome to my <span className='text-primary'>blog</span></h1>
-                        <p id='description' className='text-text text-center text-lg md:m-5'>I just blog about anything really, anything that I find interesting or just want to share with the world, it goes here.</p>
+                        <h1 className='font-bold text-5xl text-text text-center'>👋, welcome to my <span className='text-primary'>CV</span></h1>
+                        <p id='description' className='text-text text-center text-lg md:m-5'>A place where I can list all of my prior experiences, work experiences, freelance skills and work and more.</p>
                     </section>
-                    <section id='posts' className='space-y-5'>
-                        <h3 className='font-semibold text-4xl text-text text-center'>my Posts</h3>
-                        <div className='grid gap-5 grid-cols-1 md:grid-cols-2'>
+                    {/* <section id='posts' className='space-y-5'>
+                        <h3 className='font-semibold text-4xl text-text text-center'>my Past Experiences</h3>
+                        <div className=''>
+                            <div className=''>
+                                <div className='flex gap-5 items-center'>
+                                    <div className='bg-white rounded w-16 h-16'>
+                                        <img src='https://blendedlearningresources.co.za/wp-content/uploads/2019/05/Affiliates-UP.png' className=' ' />
+                                    </div>
+                                    <div className='text-white'>
+                                        <h3 className='text-lg'>University of Pretoria</h3>
+                                        <p>Pretoria, South Africa</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h4>COS212 Tutor</h4>
+                                </div>
+                            </div>
+                        </div>
+                        {/* <div className='grid gap-5 grid-cols-1 md:grid-cols-2'>
                             {posts.map((item: PostItem, index: number) => <div className={`bg-cardBackground p-5 md:p-10 space-y-4 shadow hover:-translate-y-1 duration-200 block rounded-lg`} key={index}>
                                 <h4 className='text-text text-center text-2xl font-semibold'>{item.title}</h4>
                                 <p className='text-text text-center text-lg line-clamp-3'>{item.description}</p>
@@ -34,11 +50,11 @@ export default async function Blog() {
                                 </div>
                                 <div className='flex gap-5 justify-between'>
                                     <p className='text-text'>{item.date}</p>
-                                    <Link href={`/blog/${item.slug}`} className='text-text hover:text-primary flex items-center gap-1' prefetch={true}>read post <FontAwesomeIcon icon={faArrowRight} className='w-4 h-4' /></Link>
+                                    <Link href={`/blog/${item.slug}`} className='text-text hover:text-primary flex items-center gap-1'>read post <FontAwesomeIcon icon={faArrowRight} className='w-4 h-4' /></Link>
                                 </div>
                             </div>)}
                         </div>
-                    </section>
+                </section> */}
                     <section id='contact'>
                         <div className='flex gap-5 justify-center'>
                             <Link href={`mailto:${config.contact.email.address}`} className='text-text hover:text-primary text-lg flex items-center gap-2'>{config.contact.email.text}</Link>

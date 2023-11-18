@@ -24,7 +24,7 @@ export default async function Project({ params }: { params: { id: string } }) {
                         {project[0].stack.map((stack: string, stackIndex: number) => <span key={stackIndex}>{stack}</span>)}
                     </div>
                     <div className='flex gap-5 justify-center'>
-                        <Link href={project[0].link} className='text-text hover:text-primary flex items-center hover:-translate-y-0.5 duration-100 gap-2'>Visit <FontAwesomeIcon icon={faArrowUpRightFromSquare} className='w-4 h-4' /></Link>
+                        <Link href={project[0].link} className='text-text hover:text-primary flex items-center gap-2'>Visit <FontAwesomeIcon icon={faArrowUpRightFromSquare} className='w-4 h-4' /></Link>
                     </div>
                     <nav className='flex justify-center md:hidden text-text flex-col items-center gap-5'>
                         <Link href='/' className='text-xl text-text duration-75 hover:text-primary'>go home</Link>
