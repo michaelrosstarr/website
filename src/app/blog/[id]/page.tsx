@@ -35,21 +35,29 @@ export default async function Post({ params }: { params: { id: string } }) {
                         <p id='description' className='text-text text-lg'>{post.metadata.date} | {post.metadata.author}</p>
                     </div>
 
-                    <div className='text-white space-y-5'>
+                    <div className='text-white'>
                         <Markdown
                             rehypePlugins={[rehypeHighlight, rehypeRaw, remarkGfm, rehypeSanitize]}
                             components={{
+                                p(props) {
+                                    const { node, children, ...rest } = props;
+                                    return <p className='mt-2'>{children}</p>
+                                },
+                                img(props) {
+                                    const { node, children, ...rest } = props;
+                                    return <img src={node?.properties.src as string} className='mt-2' />
+                                },
                                 a(props) {
                                     const { node, children, ...rest } = props;
                                     return <Link href={node?.properties.href as string} className='duration-75 text-primary hover:underline'>{children}</Link>
                                 },
                                 ul(props) {
                                     const { node, children, ...rest } = props;
-                                    return <ul className='list-disc ml-5'>{children}</ul>
+                                    return <ul className='list-disc ml-5 mt-1'>{children}</ul>
                                 },
                                 pre(props) {
                                     const { node, children, ...rest } = props;
-                                    return <pre className='bg-cardBackground p-2 rounded-lg'>{children}</pre>
+                                    return <pre className='bg-cardBackground p-2 rounded-lg mt-2'>{children}</pre>
                                 }
                             }}
 

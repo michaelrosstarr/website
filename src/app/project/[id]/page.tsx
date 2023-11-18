@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { getProject } from '@std/utils/notion';
-import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+import { faArrowUpRightFromSquare, faBars } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default async function Project({ params }: { params: { id: string } }) {
@@ -16,6 +16,9 @@ export default async function Project({ params }: { params: { id: string } }) {
                         <Link href='/' className='text-xl text-text duration-75 hover:text-primary'>go home</Link>
                         <Link href='/blog' className='text-xl text-text duration-75 hover:text-primary'>my blog</Link>
                     </div>
+                    <div className='md:hidden block'>
+                        <Link href='#mobile-nav' className='text-text'><FontAwesomeIcon icon={faBars} className='w-8 h-8' /></Link>
+                    </div>
                 </nav>
                 <main className='mt-20 space-y-10'>
                     <h1 className='font-bold text-5xl text-text text-center'>{project[0].name}</h1>
@@ -26,8 +29,8 @@ export default async function Project({ params }: { params: { id: string } }) {
                     <div className='flex gap-5 justify-center'>
                         <Link href={project[0].link} className='text-text hover:text-primary flex items-center gap-2'>Visit <FontAwesomeIcon icon={faArrowUpRightFromSquare} className='w-4 h-4' /></Link>
                     </div>
-                    <nav className='flex justify-center md:hidden text-text flex-col items-center gap-5'>
-                        <Link href='/' className='text-xl text-text duration-75 hover:text-primary'>go home</Link>
+                    <nav className='flex justify-center md:hidden text-text flex-col items-center gap-5' id='mobile-nav'>
+                        <Link href='/' className='text-xl text-text duration-75 hover:text-primary'>go back home</Link>
                         <Link href='/blog' className='text-xl text-text duration-75 hover:text-primary'>my blog</Link>
                         <Link href='#top' className='text-xl text-text duration-75 hover:text-primary'>back to the top</Link>
                     </nav>
