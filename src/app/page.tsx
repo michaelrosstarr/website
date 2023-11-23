@@ -3,8 +3,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { NavItem, ProjectItem, StackItem } from '@std/utils/interfaces';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight, faArrowUpRightFromSquare, faBars } from '@fortawesome/free-solid-svg-icons';
-import { faSpotify, faGithub, faLinkedin, faXTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { faArrowRight, faArrowUpRightFromSquare, faBars, faMugHot } from '@fortawesome/free-solid-svg-icons';
+import { faSpotify, faGithub, faLinkedin, faXTwitter, faYoutube, } from '@fortawesome/free-brands-svg-icons';
 import { getProjects } from '@std/utils/notion';
 import { cookies } from 'next/headers';
 
@@ -40,6 +40,7 @@ export default async function Home() {
               <Link href={config.about.social.linkedin} className='text-text hover:text-social-linkedin duration-100'><FontAwesomeIcon icon={faLinkedin} className='w-8 h-8' /></Link>
               <Link href={config.about.social.twitter} className='text-text hover:text-social-twitter duration-100'><FontAwesomeIcon icon={faXTwitter} className='w-8 h-8' /></Link>
               <Link href={config.about.social.youtube} className='text-text hover:text-social-youtube duration-100'><FontAwesomeIcon icon={faYoutube} className='w-10 h-10' /></Link>
+              <Link href={config.about.social.coffee} className='text-text hover:text-social-coffee duration-100'><FontAwesomeIcon icon={faMugHot} className='w-6 h-6' /></Link>
             </div>
           </section>
           <section id='projects' className='space-y-5'>
@@ -52,7 +53,7 @@ export default async function Home() {
                 </div>
                 <div className='space-y-3'>
                   <div className='flex gap-2 text-text text-sm justify-center flex-wrap'>
-                    {item.stack.map((stack: string, stackIndex: number) => <span key={stackIndex}>{stack}</span>)}
+                    {item.stack.map((stack: string, stackIndex: number) => <span key={stackIndex} className='bg-background px-2 py-1 rounded-lg'>{stack}</span>)}
                   </div>
                   <div className='flex gap-5 justify-end'>
                     <Link href={item.link} className='text-text hover:text-primary flex items-center gap-2'>Preview <FontAwesomeIcon icon={faArrowUpRightFromSquare} className='w-4 h-4' /></Link>

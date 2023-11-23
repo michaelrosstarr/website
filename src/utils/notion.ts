@@ -5,6 +5,14 @@ export const notion = new Client({
     auth: process.env.NOTION_TOKEN,
 })
 
+const getTags = (tags: any) => {
+    const allTags = tags.map((tag: any, index: number) => {
+        return { name: tag.name, color: tag.color };
+    });
+
+    return allTags;
+};
+
 const n2m = new NotionToMarkdown({ notionClient: notion });
 
 export const getPageMetaData = (post: any) => {
@@ -83,15 +91,23 @@ export const getProject = async (id: string) => {
         }
     });
 
-    return projects.results.map((project: any) => {
-        return {
-            name: project.properties.Name.title[0].plain_text,
-            description: project.properties.Description.rich_text[0].plain_text,
-            link: project.properties.URL.url,
-            stack: project.properties.Stack.multi_select.map((item: any) => item.name),
-            id: project.properties.ID.rich_text[0].plain_text
-        }
-    });
+    const project = projects.results[0] as any;
+
+    const mdblocks = await n2m.pageToMarkdown(project.id);
+    const mdString = n2m.toMarkdownString(mdblocks);
+
+
+
+    const item = {
+        name: project.properties.Name.title[0].plain_text,
+        description: project.properties.Description.rich_text[0].plain_text,
+        link: project.properties.URL.url,
+        stack: getTags(project.properties.Stack.multi_select),
+        id: project.properties.ID.rich_text[0].plain_text,
+        content: mdString.parent ? mdString.parent : '',
+    }
+
+    return item;
 }
 
 export const getPosts = async () => {

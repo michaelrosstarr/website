@@ -38,7 +38,8 @@ const config: Config = {
         github: "#2f81f7",
         linkedin: "#5Ab0f7",
         twitter: "#1DA1F2",
-        youtube: "#ff0000"
+        youtube: "#ff0000",
+        coffee: "#ffdd00"
       }
     }
   },

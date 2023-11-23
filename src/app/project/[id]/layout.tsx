@@ -13,9 +13,9 @@ type MetadataProps = {
 
 export async function generateMetadata({ params }: MetadataProps): Promise<Metadata> {
     const slug = params.id;
-    const project = await getProject(slug) as ProjectItem[];
+    const project = await getProject(slug) as ProjectItem;
     return {
-        title: `${project[0].name}`
+        title: `${project.name}`
     }
 }
 

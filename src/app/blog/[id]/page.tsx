@@ -1,7 +1,6 @@
 import Link from 'next/link';
-import { getPost, getProject } from '@std/utils/notion';
+import { getPost } from '@std/utils/notion';
 import Markdown from 'react-markdown';
-import { CodeBlock } from '@std/components/CodeBlock';
 import rehypeRaw from "rehype-raw";
 import rehypeHighlight from 'rehype-highlight';
 import remarkGfm from 'remark-gfm';
@@ -45,7 +44,7 @@ export default async function Post({ params }: { params: { id: string } }) {
                                 },
                                 img(props) {
                                     const { node, children, ...rest } = props;
-                                    return <img src={node?.properties.src as string} className='mt-2' />
+                                    return <img src={node?.properties.src as string} className='mt-2 rounded-lg' />
                                 },
                                 a(props) {
                                     const { node, children, ...rest } = props;

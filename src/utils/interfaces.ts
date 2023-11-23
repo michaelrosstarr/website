@@ -9,6 +9,7 @@ interface ProjectItem {
     link: string,
     stack: string[],
     id: string,
+    content?: string
 }
 
 interface StackItem {
