@@ -38,14 +38,13 @@
     "about": {
         "title": "Michael Ross Tarr",
         "subtitle": "South African, Gamer and <Programmer/>",
-        "description": "Hey 👋, I'm Michael, but I am also known as Sloth in some places. I am currently in my final year of BIS Multimedia at the University of Pretoria. If you don't see me programming or studying, you can most likely find me on the hockey field, listening to music, playing video games, or rewatching all the Star Wars series and movies.",
+        "description": "Hey 👋, I'm Michael, but I am also known as Sloth or SpikyZA in some places. I am a proud South African who enjoys anything about the beach, listening to music and playing video games. Currently studying at the University of Pretoria, doing my Honours in Multimedia.",
         "social": {
             "linkedin": "https://www.linkedin.com/in/michaelrosstarr/",
             "github": "https://github.com/michaelrosstarr",
             "spotify": "https://stats.fm/michaelrosstarr",
             "twitter": "https://twitter.com/michaelrosstarr",
-            "youtube": "https://www.youtube.com/michaelrosstarr",
-            "coffee": "https://www.buymeacoffee.com/sloththedev"
+            "youtube": "https://www.youtube.com/michaelrosstarr"
         }
     },
     "stack": [
