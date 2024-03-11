@@ -142,6 +142,11 @@
             "link": "https://sentry.io",
             "image": "https://skillicons.dev/icons?i=sentry",
             "name": "sentry"
+        },
+        {
+            "link": "https://aws.amazon.com",
+            "image": "https://skillicons.dev/icons?i=aws",
+            "name": "aws"
         }
     ],
     "contact": {
