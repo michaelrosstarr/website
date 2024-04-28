@@ -19,7 +19,7 @@ export default async function Home() {
           <Link href='/' className='text-4xl text-text font-bold'>MRT</Link>
           <div className='md:flex items-center gap-5 hidden'>
             {
-              config.nav.map((item: NavItem, index: number) => <Link key={index} href={item.href} className='text-xl text-text duration-75 hover:text-primary'>{item.name}</Link>)
+              config.nav.map((item: NavItem, index: number) => <Link key={index} href={item.href} prefetch={true} className='text-xl text-text duration-75 hover:text-primary'>{item.name}</Link>)
             }
           </div>
           <div className='md:hidden block'>
