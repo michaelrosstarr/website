@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight, } from '@fortawesome/free-solid-svg-icons';
 import { getPosts } from '@std/utils/notion';
 import { cookies } from 'next/headers'
+import Header from '@std/components/Header';
 
 export default async function Blog() {
     const posts = await getPosts();
@@ -13,7 +14,7 @@ export default async function Blog() {
         <div className='bg-background min-h-screen' id="top">
             <div className='max-w-6xl m-auto p-5'>
                 <nav className='flex justify-between items-center'>
-                    <Link href='/' prefetch={true} className='text-4xl text-text font-bold'>MRT</Link>
+                    <Header />
                     <div className='flex items-center gap-5'>
                         <Link href='/' prefetch={true} className='text-xl text-text duration-75 hover:text-primary'>go home</Link>
                     </div>

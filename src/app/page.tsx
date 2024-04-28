@@ -3,10 +3,10 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { NavItem, ProjectItem, StackItem } from '@std/utils/interfaces';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight, faArrowUpRightFromSquare, faBars } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight, faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import { faSpotify, faGithub, faLinkedin, faXTwitter, faYoutube, } from '@fortawesome/free-brands-svg-icons';
 import { getProjects } from '@std/utils/notion';
-import { cookies } from 'next/headers';
+import NavBar from '@std/components/Navbar';
 
 export default async function Home() {
 
@@ -15,17 +15,7 @@ export default async function Home() {
   return (
     <div className='bg-background min-h-screen' id="top">
       <div className='max-w-6xl m-auto p-5'>
-        <nav className='flex justify-between items-center'>
-          <Link href='/' className='text-4xl text-text font-bold'>MRT</Link>
-          <div className='md:flex items-center gap-5 hidden'>
-            {
-              config.nav.map((item: NavItem, index: number) => <Link key={index} href={item.href} prefetch={true} className='text-xl text-text duration-75 hover:text-primary'>{item.name}</Link>)
-            }
-          </div>
-          <div className='md:hidden block'>
-            <Link href='#mobile-nav' className='text-text'><FontAwesomeIcon icon={faBars} className='w-8 h-8' /></Link>
-          </div>
-        </nav>
+        <NavBar />
         <main className='mt-20 space-y-10 md:space-y-32'>
           <section id='about' className='space-y-8'>
             <div className='space-y-3'>

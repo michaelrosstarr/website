@@ -7,10 +7,7 @@ import remarkGfm from 'remark-gfm';
 import rehypeSanitize from 'rehype-sanitize'
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
-interface ExtraProps {
-    inline?: boolean;
-}
+import Header from '@std/components/Header';
 
 export default async function Post({ params }: { params: { id: string } }) {
 
@@ -20,7 +17,7 @@ export default async function Post({ params }: { params: { id: string } }) {
         <div className='bg-background min-h-screen' id="top">
             <div className='max-w-6xl m-auto p-5'>
                 <nav className='flex justify-between items-center'>
-                    <Link prefetch={true} href='/' className='text-4xl text-text font-bold'>MRT</Link>
+                    <Header />
                     <div className='md:flex items-center gap-5 hidden'>
                         <Link prefetch={true} href='/blog' className='text-xl text-text duration-75 hover:text-primary'>go back</Link>
                     </div>
@@ -34,7 +31,7 @@ export default async function Post({ params }: { params: { id: string } }) {
                         <p id='description' className='text-text text-lg'>{post.metadata.date} | {post.metadata.author}</p>
                     </div>
 
-                    <div className='text-white'>
+                    {post?.markdown && <div className='text-white'>
                         <Markdown
                             rehypePlugins={[rehypeHighlight, rehypeRaw, remarkGfm, rehypeSanitize]}
                             components={{
@@ -61,7 +58,7 @@ export default async function Post({ params }: { params: { id: string } }) {
                             }}
 
                         >{post?.markdown?.toString()}</Markdown>
-                    </div>
+                    </div>}
 
                     <nav className='flex justify-center md:hidden text-text flex-col items-center gap-5' id='mobile-nav'>
                         <Link prefetch={true} href='/' className='text-xl text-text duration-75 hover:text-primary'>go back home</Link>
