@@ -151,8 +151,8 @@
     ],
     "contact": {
         "email": {
-            "address": "hello@michaelrosstarr.com",
-            "text": "hello[at]michaelrosstarr[dot]com"
+            "address": "dev+website@michaelrosstarr.com",
+            "text": "dev[at]michaelrosstarr[dot]com"
         }
     }
 }
