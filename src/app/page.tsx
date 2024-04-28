@@ -3,14 +3,13 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { NavItem, ProjectItem, StackItem } from '@std/utils/interfaces';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight, faArrowUpRightFromSquare, faBars, faMugHot } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight, faArrowUpRightFromSquare, faBars } from '@fortawesome/free-solid-svg-icons';
 import { faSpotify, faGithub, faLinkedin, faXTwitter, faYoutube, } from '@fortawesome/free-brands-svg-icons';
 import { getProjects } from '@std/utils/notion';
 import { cookies } from 'next/headers';
 
 export default async function Home() {
 
-  const cookieStore = cookies();
   const projects = await getProjects();
 
   return (
@@ -56,7 +55,7 @@ export default async function Home() {
                   </div>
                   <div className='flex gap-5 justify-end'>
                     <Link href={item.link} className='text-text hover:text-primary flex items-center gap-2'>Preview <FontAwesomeIcon icon={faArrowUpRightFromSquare} className='w-4 h-4' /></Link>
-                    <Link href={`/project/${item.id}`} className='text-text hover:text-primary flex items-center gap-1'>Read more <FontAwesomeIcon icon={faArrowRight} className='w-4 h-4' /></Link>
+                    <Link href={`/project/${item.id}`} prefetch={true} className='text-text hover:text-primary flex items-center gap-1'>Read more <FontAwesomeIcon icon={faArrowRight} className='w-4 h-4' /></Link>
                   </div>
                 </div>
               </div>)}
