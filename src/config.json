@@ -147,7 +147,16 @@
             "link": "https://aws.amazon.com",
             "image": "https://skillicons.dev/icons?i=aws",
             "name": "aws"
-        }
+        },
+        {
+            "link": "https://unity.com",
+            "image": "https://skillicons.dev/icons?i=unity",
+            "name": "unity"
+        },
+        {
+            "link": "https://kubernetes.io/",
+            "image": "https://skillicons.dev/icons?i=kubernetes",
+            "name": "kubernetes"
     ],
     "contact": {
         "email": {
