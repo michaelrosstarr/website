@@ -8,6 +8,7 @@ import rehypeSanitize from 'rehype-sanitize'
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Header from '@std/components/Header';
+import NavBar from '@std/components/Navbar';
 
 export default async function Post({ params }: { params: { id: string } }) {
 
@@ -16,15 +17,7 @@ export default async function Post({ params }: { params: { id: string } }) {
     return (
         <div className='bg-background min-h-screen' id="top">
             <div className='max-w-6xl m-auto p-5'>
-                <nav className='flex justify-between items-center'>
-                    <Header />
-                    <div className='md:flex items-center gap-5 hidden'>
-                        <Link prefetch={true} href='/blog' className='text-xl text-text duration-75 hover:text-primary'>go back</Link>
-                    </div>
-                    <div className='md:hidden block'>
-                        <Link href='#mobile-nav' className='text-text'><FontAwesomeIcon icon={faBars} className='w-8 h-8' /></Link>
-                    </div>
-                </nav>
+                <NavBar />
                 <main className='mt-10 space-y-10'>
                     <div className='space-y-2'>
                         <h1 className='font-bold text-5xl text-text'>{post.metadata.title}</h1>

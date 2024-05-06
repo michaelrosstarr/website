@@ -8,6 +8,7 @@ import rehypeHighlight from 'rehype-highlight';
 import remarkGfm from 'remark-gfm';
 import rehypeSanitize from 'rehype-sanitize'
 import Header from '@std/components/Header';
+import NavBar from '@std/components/Navbar';
 
 export default async function Project({ params }: { params: { id: string } }) {
 
@@ -16,16 +17,7 @@ export default async function Project({ params }: { params: { id: string } }) {
     return (
         <div className='bg-background min-h-screen' id="#top">
             <div className='max-w-6xl m-auto p-5'>
-                <nav className='flex justify-between items-center'>
-                    <Header />
-                    <div className='md:flex items-center gap-5 hidden'>
-                        <Link href='/' className='text-xl text-text duration-75 hover:text-primary'>go home</Link>
-                        <Link href='/blog' className='text-xl text-text duration-75 hover:text-primary'>my blog</Link>
-                    </div>
-                    <div className='md:hidden block'>
-                        <Link href='#mobile-nav' className='text-text'><FontAwesomeIcon icon={faBars} className='w-8 h-8' /></Link>
-                    </div>
-                </nav>
+                <NavBar />
                 <main className='mt-20 space-y-10'>
                     <h1 className='font-bold text-5xl text-text text-center'>{project.name}</h1>
                     <p id='description' className='text-text text-center text-lg md:m-5'>{project.description}</p>

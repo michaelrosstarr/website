@@ -2,17 +2,17 @@
     "nav": [
         {
             "name": "about me",
-            "href": "#about",
+            "href": "/#about",
             "mobile": false
         },
         {
             "name": "my projects",
-            "href": "#projects",
+            "href": "/#projects",
             "mobile": false
         },
         {
             "name": "get in touch",
-            "href": "#contact",
+            "href": "/#contact",
             "mobile": false
         },
         {
@@ -157,7 +157,7 @@
             "link": "https://kubernetes.io/",
             "image": "https://skillicons.dev/icons?i=kubernetes",
             "name": "kubernetes"
-}
+        }
     ],
     "contact": {
         "email": {
