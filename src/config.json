@@ -40,11 +40,11 @@
         "subtitle": "South African, Student, Gamer",
         "description": "Hey 👋, I'm Michael. I sometimes go by Sloth or SpikyZA in some places. I am a proud South African currently doing my postgraduate at the University of Pretoria in Multimedia. I love playing video games, listening to music and watching anything and everything Star Wars. I am a freelance fullstack developer with knowledge in web-focused langauges, tools and frameworks.",
         "social": {
-            "linkedin": "https://www.linkedin.com/in/michaelrosstarr/",
-            "github": "https://github.com/michaelrosstarr",
-            "spotify": "https://stats.fm/michaelrosstarr",
-            "twitter": "https://twitter.com/michaelrosstarr",
-            "youtube": "https://www.youtube.com/michaelrosstarr"
+            "linkedin": "https://go.michaelrosstarr.com/linkedin",
+            "github": "https://go.michaelrosstarr.com/github",
+            "spotify": "https://go.michaelrosstarr.com/statsfm",
+            "twitter": "https://go.michaelrosstarr.com/twitter",
+            "youtube": "https://go.michaelrosstarr.com/youtube"
         }
     },
     "stack": {
