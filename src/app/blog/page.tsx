@@ -7,6 +7,7 @@ import { getPosts } from '@std/utils/notion';
 import { cookies } from 'next/headers'
 import Header from '@std/components/Header';
 import NavBar from '@std/components/Navbar';
+import BackToTop from '@std/components/BackToTop';
 
 export default async function Blog() {
     const posts = await getPosts();
@@ -41,12 +42,9 @@ export default async function Blog() {
                             <Link href={`mailto:${config.contact.email.address}`} className='text-text hover:text-primary text-lg flex items-center gap-2'>{config.contact.email.text}</Link>
                         </div>
                     </section>
-                    <nav className='flex justify-center md:hidden text-text flex-col items-center gap-5'>
-                        <Link prefetch={true} href='/' className='text-xl text-text duration-75 hover:text-primary'>go home</Link>
-                        <Link href='#top' className='text-xl text-text duration-75 hover:text-primary'>back to the top</Link>
-                    </nav>
                 </main>
             </div>
-        </div >
+            <BackToTop />
+        </div>
     )
 }

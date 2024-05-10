@@ -1,22 +1,22 @@
 {
     "nav": [
         {
-            "name": "about me",
+            "name": "About Me",
             "href": "/#about",
             "mobile": false
         },
         {
-            "name": "my projects",
+            "name": "My Projects",
             "href": "/#projects",
             "mobile": false
         },
         {
-            "name": "get in touch",
+            "name": "Get in Touch",
             "href": "/#contact",
             "mobile": false
         },
         {
-            "name": "my blog",
+            "name": "My Blog",
             "href": "/blog",
             "mobile": true
         }
@@ -47,118 +47,126 @@
             "youtube": "https://www.youtube.com/michaelrosstarr"
         }
     },
-    "stack": [
-        {
-            "link": "https://docker.com/",
-            "image": "https://skillicons.dev/icons?i=docker",
-            "name": "docker"
-        },
-        {
-            "link": "https://azure.microsoft.com/en-us",
-            "image": "https://skillicons.dev/icons?i=azure",
-            "name": "azure"
-        },
-        {
-            "link": "https://cloudflare.com/",
-            "image": "https://skillicons.dev/icons?i=cloudflare",
-            "name": "cloudflare"
-        },
-        {
-            "link": "https://deno.com/",
-            "image": "https://skillicons.dev/icons?i=deno",
-            "name": "deno"
-        },
-        {
-            "link": "https://expressjs.com/",
-            "image": "https://skillicons.dev/icons?i=express",
-            "name": "express"
-        },
-        {
-            "link": "https://firebase.google.com/",
-            "image": "https://skillicons.dev/icons?i=firebase",
-            "name": "firebase"
-        },
-        {
-            "link": "https://cloud.google.com/",
-            "image": "https://skillicons.dev/icons?i=gcp",
-            "name": "gcp"
-        },
-        {
-            "link": "https://github.com/",
-            "image": "https://skillicons.dev/icons?i=github",
-            "name": "github"
-        },
-        {
-            "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-            "image": "https://skillicons.dev/icons?i=js",
-            "name": "js"
-        },
-        {
-            "link": "https://mongodb.com/",
-            "image": "https://skillicons.dev/icons?i=mongodb",
-            "name": "mongodb"
-        },
-        {
-            "link": "https://nestjs.com/",
-            "image": "https://skillicons.dev/icons?i=nestjs",
-            "name": "nestjs"
-        },
-        {
-            "link": "https://nextjs.org",
-            "image": "https://skillicons.dev/icons?i=nextjs",
-            "name": "nextjs"
-        },
-        {
-            "link": "https://nodejs.org/en",
-            "image": "https://skillicons.dev/icons?i=nodejs",
-            "name": "nodejs"
-        },
-        {
-            "link": "https://react.dev",
-            "image": "https://skillicons.dev/icons?i=react",
-            "name": "react"
-        },
-        {
-            "link": "https://tailwindcss.com/",
-            "image": "https://skillicons.dev/icons?i=tailwind",
-            "name": "tailwind"
-        },
-        {
-            "link": "https://typescriptlang.org/",
-            "image": "https://skillicons.dev/icons?i=ts",
-            "name": "ts"
-        },
-        {
-            "link": "https://workers.cloudflare.com/",
-            "image": "https://skillicons.dev/icons?i=workers",
-            "name": "workers"
-        },
-        {
-            "link": "https://vercel.com",
-            "image": "https://skillicons.dev/icons?i=vercel",
-            "name": "vercel"
-        },
-        {
-            "link": "https://sentry.io",
-            "image": "https://skillicons.dev/icons?i=sentry",
-            "name": "sentry"
-        },
-        {
-            "link": "https://aws.amazon.com",
-            "image": "https://skillicons.dev/icons?i=aws",
-            "name": "aws"
-        },
-        {
-            "link": "https://unity.com",
-            "image": "https://skillicons.dev/icons?i=unity",
-            "name": "unity"
-        },
-        {
-            "link": "https://kubernetes.io/",
-            "image": "https://skillicons.dev/icons?i=kubernetes",
-            "name": "kubernetes"
-        }
-    ],
+    "stack": {
+        "title": "Technology Stack",
+        "description": "I use primarily web-based languages and frameworks, but I am dabbling in game engines, specifically Unity with Meta XR for VR/MR development.",
+        "technology": [
+            {
+                "link": "https://docker.com/",
+                "image": "https://skillicons.dev/icons?i=docker",
+                "name": "docker"
+            },
+            {
+                "link": "https://azure.microsoft.com/en-us",
+                "image": "https://skillicons.dev/icons?i=azure",
+                "name": "azure"
+            },
+            {
+                "link": "https://cloudflare.com/",
+                "image": "https://skillicons.dev/icons?i=cloudflare",
+                "name": "cloudflare"
+            },
+            {
+                "link": "https://deno.com/",
+                "image": "https://skillicons.dev/icons?i=deno",
+                "name": "deno"
+            },
+            {
+                "link": "https://expressjs.com/",
+                "image": "https://skillicons.dev/icons?i=express",
+                "name": "express"
+            },
+            {
+                "link": "https://firebase.google.com/",
+                "image": "https://skillicons.dev/icons?i=firebase",
+                "name": "firebase"
+            },
+            {
+                "link": "https://cloud.google.com/",
+                "image": "https://skillicons.dev/icons?i=gcp",
+                "name": "gcp"
+            },
+            {
+                "link": "https://github.com/",
+                "image": "https://skillicons.dev/icons?i=github",
+                "name": "github"
+            },
+            {
+                "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+                "image": "https://skillicons.dev/icons?i=js",
+                "name": "js"
+            },
+            {
+                "link": "https://mongodb.com/",
+                "image": "https://skillicons.dev/icons?i=mongodb",
+                "name": "mongodb"
+            },
+            {
+                "link": "https://nestjs.com/",
+                "image": "https://skillicons.dev/icons?i=nestjs",
+                "name": "nestjs"
+            },
+            {
+                "link": "https://nextjs.org",
+                "image": "https://skillicons.dev/icons?i=nextjs",
+                "name": "nextjs"
+            },
+            {
+                "link": "https://nodejs.org/en",
+                "image": "https://skillicons.dev/icons?i=nodejs",
+                "name": "nodejs"
+            },
+            {
+                "link": "https://react.dev",
+                "image": "https://skillicons.dev/icons?i=react",
+                "name": "react"
+            },
+            {
+                "link": "https://tailwindcss.com/",
+                "image": "https://skillicons.dev/icons?i=tailwind",
+                "name": "tailwind"
+            },
+            {
+                "link": "https://typescriptlang.org/",
+                "image": "https://skillicons.dev/icons?i=ts",
+                "name": "ts"
+            },
+            {
+                "link": "https://workers.cloudflare.com/",
+                "image": "https://skillicons.dev/icons?i=workers",
+                "name": "workers"
+            },
+            {
+                "link": "https://vercel.com",
+                "image": "https://skillicons.dev/icons?i=vercel",
+                "name": "vercel"
+            },
+            {
+                "link": "https://sentry.io",
+                "image": "https://skillicons.dev/icons?i=sentry",
+                "name": "sentry"
+            },
+            {
+                "link": "https://aws.amazon.com",
+                "image": "https://skillicons.dev/icons?i=aws",
+                "name": "aws"
+            },
+            {
+                "link": "https://unity.com",
+                "image": "https://skillicons.dev/icons?i=unity",
+                "name": "unity"
+            },
+            {
+                "link": "https://kubernetes.io/",
+                "image": "https://skillicons.dev/icons?i=kubernetes",
+                "name": "kubernetes"
+            }
+        ]
+    },
+    "projects": {
+        "title": "My Projects",
+        "description": "Just a few project that I have worked on throughout my years as a freelance developer."
+    },
     "contact": {
         "email": {
             "address": "dev+website@michaelrosstarr.com",

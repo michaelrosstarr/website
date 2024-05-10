@@ -23,7 +23,7 @@ export default function MobileNav() {
                 leaveFrom="opacity-100 translate-y-0"
                 leaveTo="opacity-0 translate-y-1"
             >
-                <Popover.Panel className="absolute inset-x-0 top-full m-2 flex origin-top flex-col rounded-2xl bg-black3 p-4 text-lg tracking-tight text-slate-900 shadow-xl bg-cardBackground gap-2">
+                <Popover.Panel className="absolute inset-x-0 top-full mt-2 flex origin-top flex-col rounded-2xl bg-black3 p-4 text-lg tracking-tight text-slate-900 shadow-xl bg-cardBackground gap-2">
                     {
                         config.nav.map((item: NavItem, index: number) => <Link key={index} href={item.href} prefetch={true} className='text-xl text-gray-300 duration-75 hover:text-primary py-2'>{item.name}</Link>)
                     }

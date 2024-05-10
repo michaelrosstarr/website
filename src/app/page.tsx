@@ -7,6 +7,7 @@ import { faArrowRight, faArrowUpRightFromSquare } from '@fortawesome/free-solid-
 import { faSpotify, faGithub, faLinkedin, faXTwitter, faYoutube, } from '@fortawesome/free-brands-svg-icons';
 import { getProjects } from '@std/utils/notion';
 import NavBar from '@std/components/Navbar';
+import BackToTop from '@std/components/BackToTop';
 
 export default async function Home() {
 
@@ -24,15 +25,16 @@ export default async function Home() {
             </div>
             <p id='description' className='text-text text-center text-lg md:m-5'>{config.about.description}</p>
             <div id='socials' className='flex gap-5 justify-center items-center'>
-              <Link href={config.about.social.spotify} className='text-text hover:text-social-spotify duration-100'><FontAwesomeIcon icon={faSpotify} className='w-8 h-8' /></Link>
-              <Link href={config.about.social.github} className='text-text hover:text-social-github duration-100'><FontAwesomeIcon icon={faGithub} className='w-8 h-8' /></Link>
-              <Link href={config.about.social.linkedin} className='text-text hover:text-social-linkedin duration-100'><FontAwesomeIcon icon={faLinkedin} className='w-8 h-8' /></Link>
-              <Link href={config.about.social.twitter} className='text-text hover:text-social-twitter duration-100'><FontAwesomeIcon icon={faXTwitter} className='w-8 h-8' /></Link>
-              <Link href={config.about.social.youtube} className='text-text hover:text-social-youtube duration-100'><FontAwesomeIcon icon={faYoutube} className='w-10 h-10' /></Link>
+              <Link href={config.about.social.spotify} className='text-text hover:text-social-spotify duration-100 hover:-translate-y-1'><FontAwesomeIcon icon={faSpotify} className='w-8 h-8' /></Link>
+              <Link href={config.about.social.github} className='text-text hover:text-social-github duration-100 hover:-translate-y-1'><FontAwesomeIcon icon={faGithub} className='w-8 h-8' /></Link>
+              <Link href={config.about.social.linkedin} className='text-text hover:text-social-linkedin duration-100 hover:-translate-y-1'><FontAwesomeIcon icon={faLinkedin} className='w-8 h-8' /></Link>
+              <Link href={config.about.social.twitter} className='text-text hover:text-social-twitter duration-100 hover:-translate-y-1'><FontAwesomeIcon icon={faXTwitter} className='w-8 h-8' /></Link>
+              <Link href={config.about.social.youtube} className='text-text hover:text-social-youtube duration-100 hover:-translate-y-1'><FontAwesomeIcon icon={faYoutube} className='w-10 h-10' /></Link>
             </div>
           </section>
           <section id='projects' className='space-y-5'>
-            <h3 className='font-semibold text-4xl text-text text-center'>my Projects</h3>
+            <h3 className='font-semibold text-4xl text-text text-center'>{config.projects.title}</h3>
+            <p id='description' className='text-text text-center text-lg md:m-5'>{config.projects?.description}</p>
             <div className='grid gap-5 grid-cols-1 md:grid-cols-2'>
               {projects.map((item: ProjectItem, index: number) => <div className='bg-cardBackground p-5 md:p-10 space-y-4 shadow hover:-translate-y-1 duration-200 rounded-lg flex items-between justify-between flex-col' key={index}>
                 <div>
@@ -52,9 +54,10 @@ export default async function Home() {
             </div>
           </section>
           <section id='stack' className='space-y-5'>
-            <h3 className='font-semibold text-4xl text-text text-center'>my Stack</h3>
+            <h3 className='font-semibold text-4xl text-text text-center'>{config.stack.title}</h3>
+            <p id='description' className='text-text text-center text-lg md:m-5'>{config.stack?.description}</p>
             <div className='flex flex-row gap-3 items-center justify-center flex-wrap'>
-              {config.stack.map((item: StackItem, index: number) => <Link href={item.link} key={index}>
+              {config.stack.technology.map((item: StackItem, index: number) => <Link href={item.link} key={index}>
                 <Image src={item.image} alt={`Icon for ${item.name}`} width={48} height={48} />
               </Link>)}
             </div>
@@ -64,14 +67,9 @@ export default async function Home() {
               <Link href={`mailto:${config.contact.email.address}`} className='text-text hover:text-primary text-lg flex items-center gap-2'>{config.contact.email.text}</Link>
             </div>
           </section>
-          <nav id='mobile-nav' className='flex justify-center md:hidden text-text flex-col items-center gap-5'>
-            {
-              config.nav.map((item: NavItem, index: number) => <Link key={index} href={item.href} className='text-xl text-text duration-75 hover:text-primary'>{item.name}</Link>)
-            }
-            <Link href='#top' className='text-xl text-text duration-75 hover:text-primary'>back to the top</Link>
-          </nav>
         </main>
       </div>
+      <BackToTop />
     </div>
   )
 }

@@ -9,6 +9,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Header from '@std/components/Header';
 import NavBar from '@std/components/Navbar';
+import BackToTop from '@std/components/BackToTop';
 
 export default async function Post({ params }: { params: { id: string } }) {
 
@@ -24,17 +25,17 @@ export default async function Post({ params }: { params: { id: string } }) {
                         <p id='description' className='text-text text-lg'>{post.metadata.date} | {post.metadata.author}</p>
                     </div>
 
-                    {post?.markdown && <div className='text-white'>
+                    {post?.markdown && <div className='text-white space-y-3'>
                         <Markdown
                             rehypePlugins={[rehypeHighlight, rehypeRaw, remarkGfm, rehypeSanitize]}
                             components={{
                                 p(props) {
                                     const { node, children, ...rest } = props;
-                                    return <p className='mt-2'>{children}</p>
+                                    return <p className=''>{children}</p>
                                 },
                                 img(props) {
                                     const { node, children, ...rest } = props;
-                                    return <img src={node?.properties.src as string} className='mt-2 rounded-lg' />
+                                    return <img src={node?.properties.src as string} className='rounded-lg mx-auto' />
                                 },
                                 a(props) {
                                     const { node, children, ...rest } = props;
@@ -42,24 +43,19 @@ export default async function Post({ params }: { params: { id: string } }) {
                                 },
                                 ul(props) {
                                     const { node, children, ...rest } = props;
-                                    return <ul className='list-disc ml-5 mt-1'>{children}</ul>
+                                    return <ul className='list-disc ml-5'>{children}</ul>
                                 },
                                 pre(props) {
                                     const { node, children, ...rest } = props;
-                                    return <pre className='bg-cardBackground p-2 rounded-lg mt-2'>{children}</pre>
+                                    return <pre className='bg-cardBackground p-2 rounded-lg'>{children}</pre>
                                 }
                             }}
 
                         >{post?.markdown?.toString()}</Markdown>
                     </div>}
-
-                    <nav className='flex justify-center md:hidden text-text flex-col items-center gap-5' id='mobile-nav'>
-                        <Link prefetch={true} href='/' className='text-xl text-text duration-75 hover:text-primary'>go back home</Link>
-                        <Link prefetch={true} href='/blog' className='text-xl text-text duration-75 hover:text-primary'>back to blog posts</Link>
-                        <Link href='#top' className='text-xl text-text duration-75 hover:text-primary'>back to the top</Link>
-                    </nav>
                 </main>
             </div>
+            <BackToTop />
         </div>
     )
 }
