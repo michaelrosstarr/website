@@ -1,5 +1,4 @@
 import NavBar from '@std/components/Navbar';
-import Link from 'next/link';
 
 export default async function NoExist() {
     return (
