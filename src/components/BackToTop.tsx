@@ -39,6 +39,6 @@ export default function BackToTop() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
-    return <FontAwesomeIcon onClick={scrollToTop} icon={faCircleUp} className={`${isVisible ? "opacity-1" : "opacity-0"} duration-200 ease-in border-transparent focus:border-transparent focus:ring-0 text-text bg-cardBackground p-4 fixed right-5 bottom-5 m-auto rounded-xl text-2xl border-4 border-background cursor-pointer`} />;
+    return <FontAwesomeIcon onClick={scrollToTop} icon={faCircleUp} className={`${isVisible ? "opacity-1" : "opacity-0"} duration-200 ease-in border-transparent focus:border-transparent focus:ring-0 text-text bg-cardBackground p-3 fixed right-5 bottom-5 m-auto rounded-xl text-2xl border-4 border-background cursor-pointer`} />;
 
 }
