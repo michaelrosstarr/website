@@ -33,6 +33,10 @@
         "/cv": {
             "title": "my CV",
             "description": "Hey 👋, this is my CV. Have a look around."
+        },
+        "/terms": {
+            "title": "Terms & Privacy",
+            "description": "Terms and Conditions alongside Privacy"
         }
     },
     "about": {
@@ -161,7 +165,7 @@
                 "image": "https://skillicons.dev/icons?i=kubernetes",
                 "name": "kubernetes"
             },
-                        {
+            {
                 "link": "https://bun.sh/",
                 "image": "https://skillicons.dev/icons?i=bun",
                 "name": "bun"
