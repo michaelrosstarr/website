@@ -41,14 +41,13 @@
     },
     "about": {
         "title": "Michael Ross Tarr",
-        "subtitle": "South African, Student, Gamer",
-        "description": "Hey 👋, I'm Michael. I sometimes go by Sloth or SpikyZA in some places. I am a proud South African currently doing my postgraduate at the University of Pretoria in Multimedia. I love playing video games, listening to music and watching anything and everything Star Wars. I am a freelance fullstack developer with knowledge in web-focused langauges, tools and frameworks.",
+        "subtitle": "proudly South African",
+        "description": "Hey 👋, I'm Michael, but I also go as Sloth in some places. I'm a proudly South African freelance fullstack web developer. Being an avid gamer, I play games 🤣 but also listen to music from time to time ~ as in, I'm always listening to music. I'm currently purusing my post graduate honours level degree in Multimedia, with a focus on Mixed Reality.",
         "social": {
             "linkedin": "https://go.michaelrosstarr.com/linkedin",
             "github": "https://go.michaelrosstarr.com/github",
             "spotify": "https://go.michaelrosstarr.com/statsfm",
-            "twitter": "https://go.michaelrosstarr.com/twitter",
-            "youtube": "https://go.michaelrosstarr.com/youtube"
+            "twitter": "https://go.michaelrosstarr.com/twitter"
         }
     },
     "stack": {
@@ -174,11 +173,11 @@
     },
     "projects": {
         "title": "My Projects",
-        "description": "Just a few project that I have worked on throughout my years as a freelance developer."
+        "description": "Just a few projects and companies that I have been working on over the years."
     },
     "contact": {
         "email": {
-            "address": "dev+website@michaelrosstarr.com",
+            "address": "website@michaelrosstarr.com",
             "text": "dev[at]michaelrosstarr[dot]com"
         }
     }
