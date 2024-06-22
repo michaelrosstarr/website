@@ -160,11 +160,6 @@
                 "name": "unity"
             },
             {
-                "link": "https://kubernetes.io/",
-                "image": "https://skillicons.dev/icons?i=kubernetes",
-                "name": "kubernetes"
-            },
-            {
                 "link": "https://bun.sh/",
                 "image": "https://skillicons.dev/icons?i=bun",
                 "name": "bun"
