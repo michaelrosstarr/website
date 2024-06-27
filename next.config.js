@@ -17,6 +17,11 @@ const nextConfig = {
                 protocol: 'https',
                 hostname: 'acdn.sloththe.dev',
                 pathname: '/**',
+            },
+            {
+                protocol: 'https',
+                hostname: 'images.unsplash.com',
+                pathname: '/**'
             }
         ]
     }

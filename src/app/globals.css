@@ -9,7 +9,7 @@
 ::-webkit-scrollbar {
     width: 6px;
     height: 6px;
-    background-color: #001939;
+    background-color: #0c1216;
 }
 
 ::-webkit-scrollbar-button {
@@ -17,7 +17,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: white;
+    background-color: #2675f9;
     border-radius: 8px;
     cursor: pointer;
     border: solid 4px transparent;

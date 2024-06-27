@@ -8,6 +8,7 @@ import { cookies } from 'next/headers'
 import Header from '@std/components/Header';
 import NavBar from '@std/components/Navbar';
 import BackToTop from '@std/components/BackToTop';
+import Image from 'next/image';
 
 export default async function Blog() {
     const posts = await getPosts();

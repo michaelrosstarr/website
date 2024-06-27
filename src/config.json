@@ -27,11 +27,11 @@
             "description": "Hey 👋, I'm Michael, but I am also known as Sloth in some places."
         },
         "/blog": {
-            "title": "my Blog",
+            "title": "Blog",
             "description": "Hey 👋, welcome to my blog."
         },
         "/cv": {
-            "title": "my CV",
+            "title": "CV",
             "description": "Hey 👋, this is my CV. Have a look around."
         },
         "/terms": {
@@ -172,7 +172,7 @@
     },
     "contact": {
         "email": {
-            "address": "website@michaelrosstarr.com",
+            "address": "dev@michaelrosstarr.com",
             "text": "dev[at]michaelrosstarr[dot]com"
         }
     }

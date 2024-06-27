@@ -1,9 +1,9 @@
 import config from '../config.json';
 import Link from 'next/link';
 import Image from 'next/image';
-import { NavItem, ProjectItem, StackItem } from '@std/utils/interfaces';
+import { ProjectItem, StackItem } from '@std/utils/interfaces';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight, faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight, faArrowUpRightFromSquare, faDownload, faFileDownload, faKey } from '@fortawesome/free-solid-svg-icons';
 import { faSpotify, faGithub, faLinkedin, faXTwitter, faYoutube, } from '@fortawesome/free-brands-svg-icons';
 import { getProjects } from '@std/utils/notion';
 import NavBar from '@std/components/Navbar';
@@ -35,7 +35,7 @@ export default async function Home() {
             <h3 className='font-semibold text-4xl text-text text-center'>{config.projects.title}</h3>
             <p id='description' className='text-text text-center text-lg md:m-5'>{config.projects?.description}</p>
             <div className='grid gap-5 grid-cols-1 md:grid-cols-2'>
-              {projects.map((item: ProjectItem, index: number) => <div className='bg-cardBackground p-5 md:p-10 space-y-4 shadow hover:-translate-y-1 duration-200 rounded-lg flex items-between justify-between flex-col' key={index}>
+              {projects.map((item: ProjectItem, index: number) => <div className='p-5 md:p-10 space-y-4 shadow hover:-translate-y-1 duration-100 rounded-lg flex items-between justify-between flex-col bg-cardBackground border-2 border-cardBackground hover:border-primary' key={index}>
                 <div>
                   <h4 className='text-text text-center text-2xl font-semibold'>{item.name}</h4>
                   <p className='text-text text-center text-lg line-clamp-3'>{item.description}</p>
@@ -57,13 +57,14 @@ export default async function Home() {
             <p id='description' className='text-text text-center text-lg md:m-5'>{config.stack?.description}</p>
             <div className='flex flex-row gap-3 items-center justify-center flex-wrap'>
               {config.stack.technology.map((item: StackItem, index: number) => <Link href={item.link} key={index}>
-                <Image src={item.image} alt={`Icon for ${item.name}`} width={48} height={48} />
+                <Image src={item.image} alt={`Icon for ${item.name}`} width={48} height={48} className='hover:-translate-y-1.5 duration-100' />
               </Link>)}
             </div>
           </section>
           <section id='contact'>
-            <div className='flex gap-5 justify-center'>
+            <div className='flex gap-5 justify-center items-center flex-col'>
               <Link href={`mailto:${config.contact.email.address}`} className='text-text hover:text-primary text-lg flex items-center gap-2'>{config.contact.email.text}</Link>
+              <Link href='/assets/keys/dev@michaelrosstarr.com.asc' className='text-primary bg-primary/10 p-2 rounded-xl border border-primary hover:-translate-y-1.5 duration-100'>Verify that it is me <FontAwesomeIcon icon={faKey} className='ml-2' /></Link>
             </div>
           </section>
         </main>
