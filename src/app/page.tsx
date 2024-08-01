@@ -3,8 +3,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { ProjectItem, StackItem } from '@std/utils/interfaces';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight, faArrowUpRightFromSquare, faDownload, faFileDownload, faKey } from '@fortawesome/free-solid-svg-icons';
-import { faSpotify, faGithub, faLinkedin, faXTwitter, faYoutube, } from '@fortawesome/free-brands-svg-icons';
+import { faArrowRight, faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+import { faSpotify, faGithub, faLinkedin, faXTwitter } from '@fortawesome/free-brands-svg-icons';
 import { getProjects } from '@std/utils/notion';
 import NavBar from '@std/components/Navbar';
 import BackToTop from '@std/components/BackToTop';
@@ -64,7 +64,6 @@ export default async function Home() {
           <section id='contact'>
             <div className='flex gap-5 justify-center items-center flex-col'>
               <Link href={`mailto:${config.contact.email.address}`} className='text-text hover:text-primary text-lg flex items-center gap-2'>{config.contact.email.text}</Link>
-              <Link href='/assets/keys/dev@michaelrosstarr.com.asc' className='text-primary bg-primary/10 p-2 rounded-xl border border-primary hover:-translate-y-1.5 duration-100'>Verify that it is me <FontAwesomeIcon icon={faKey} className='ml-2' /></Link>
             </div>
           </section>
         </main>
