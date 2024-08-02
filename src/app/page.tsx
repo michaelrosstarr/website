@@ -31,7 +31,7 @@ export default async function Home() {
               {config.about.social?.twitter && <Link href={config.about.social.twitter} className='text-text hover:text-social-twitter duration-100 hover:-translate-y-1'><FontAwesomeIcon icon={faXTwitter} className='w-8 h-8' /></Link>}
             </div>
             <div id='spotify' className='flex justify-center items-center'>
-              <Image src={config.about.spotify} alt='Spotify Now Playing' width={320} height={445} />
+              <img src={config.about.spotify} alt='Spotify Now Playing' width={320} height={445} />
             </div>
           </section>
           <section id='projects' className='space-y-5'>
