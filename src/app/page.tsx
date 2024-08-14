@@ -69,7 +69,7 @@ export default async function Home() {
         </main>
       </div>
       <BackToTop />
-      <div id='spotify' className='flex justify-center items-center fixed bottom-5 left-5'>
+      <div id='spotify' className='static md:fixed flex justify-center items-center bottom-5 left-5'>
         <img src={config.about.spotify} alt='Spotify Now Playing' width={250} height={375} />
       </div>
     </div>

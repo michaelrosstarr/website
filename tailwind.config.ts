@@ -33,7 +33,7 @@ const config: Config = {
       forth: "#0d1117",
       text: "#FFFFFF",
       social: {
-        spotify: "#00DF70",
+        spotify: "#00C966",
         github: "#2f81f7",
         linkedin: "#5Ab0f7",
         twitter: "#1DA1F2",
