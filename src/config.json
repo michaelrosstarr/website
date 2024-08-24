@@ -2,23 +2,15 @@
     "nav": [
         {
             "name": "About Me",
-            "href": "/#about",
-            "mobile": false
+            "href": "/#about"
         },
         {
             "name": "My Projects",
-            "href": "/#projects",
-            "mobile": false
+            "href": "/#projects"
         },
         {
             "name": "Get in Touch",
-            "href": "/#contact",
-            "mobile": false
-        },
-        {
-            "name": "My Blog",
-            "href": "/blog",
-            "mobile": true
+            "href": "/#contact"
         }
     ],
     "metadata": {
@@ -53,7 +45,7 @@
     },
     "stack": {
         "title": "Technology Stack",
-        "description": "I use primarily web-based languages and frameworks, but I am dabbling in game engines, specifically Unity with Meta XR for VR/MR development.",
+        "description": "Coming from a web development background, most of the technologies and programming languages that I have used are from the web development sphere. But I have recently started dabbling in XR development using Unity and the Meta XR SDK.",
         "technology": [
             {
                 "link": "https://docker.com/",
