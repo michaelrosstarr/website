@@ -10,7 +10,7 @@ type MetadataProps = {
     params: { id: string }
 }
 
-export async function generateMetadata({ params }: MetadataProps): Promise<Metadata> {
+export async function generateMetadata({ params }: MetadataProps) {
     const slug = params.id;
     const post = await getPost(slug) as any;
     return {
