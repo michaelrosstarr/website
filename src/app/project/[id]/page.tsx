@@ -10,10 +10,27 @@ import rehypeSanitize from 'rehype-sanitize'
 import Header from '@std/components/Header';
 import NavBar from '@std/components/Navbar';
 import BackToTop from '@std/components/BackToTop';
+import { Metadata, ResolvingMetadata } from 'next';
+import { ProjectItem } from '@std/utils/interfaces';
 
-export default async function Project({ params }: { params: { id: string } }) {
+type Props = {
+    params: Promise<{ id: string }>
+}
 
-    const project = await getProject(params.id);
+export async function generateMetadata(
+    { params }: Props,
+    parent: ResolvingMetadata
+): Promise<Metadata> {
+    const slug = (await params).id
+    const project = await getProject(slug) as ProjectItem;
+    return {
+        title: `${project.name}`
+    }
+}
+
+export default async function Project({ params }: Props) {
+    const slug = (await params).id
+    const project = await getProject(slug);
 
     return (
         <div className='bg-background min-h-screen' id="#top">

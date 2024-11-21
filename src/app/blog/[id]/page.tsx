@@ -10,10 +10,27 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Header from '@std/components/Header';
 import NavBar from '@std/components/Navbar';
 import BackToTop from '@std/components/BackToTop';
+import { Metadata, ResolvingMetadata } from 'next';
 
-export default async function Post({ params }: { params: { id: string } }) {
+type Props = {
+    params: Promise<{ id: string }>
+}
 
-    const post = await getPost(params.id);
+export async function generateMetadata(
+    { params }: Props,
+    parent: ResolvingMetadata
+): Promise<Metadata> {
+    const slug = (await params).id
+    const post = await getPost(slug) as any;
+    return {
+        title: `${post.metadata.title}`,
+        description: post.metadata.description
+    }
+}
+
+export default async function Post({ params }: Props) {
+    const slug = (await params).id
+    const post = await getPost(slug);
 
     return (
         <div className='bg-background min-h-screen' id="top">
