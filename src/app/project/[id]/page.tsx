@@ -7,7 +7,6 @@ import rehypeRaw from "rehype-raw";
 import rehypeHighlight from 'rehype-highlight';
 import remarkGfm from 'remark-gfm';
 import rehypeSanitize from 'rehype-sanitize'
-import Header from '@std/components/Header';
 import NavBar from '@std/components/Navbar';
 import BackToTop from '@std/components/BackToTop';
 import { Metadata, ResolvingMetadata } from 'next';

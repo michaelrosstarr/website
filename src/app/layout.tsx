@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Outfit } from 'next/font/google'
 import './globals.css'
 import config from '../config.json';
+import Snow from '@std/components/Snow';
 
 const outfit = Outfit({ subsets: ['latin'] })
 
@@ -18,6 +19,7 @@ export default function RootLayout({
 
   return (
     <html lang="en">
+      <Snow />
       <body className={outfit.className}>{children}</body>
     </html>
   )
