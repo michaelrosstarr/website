@@ -8,6 +8,7 @@ import { faSpotify, faGithub, faLinkedin, faXTwitter } from '@fortawesome/free-b
 import { getProjects } from '@std/utils/notion';
 import NavBar from '@std/components/Navbar';
 import BackToTop from '@std/components/BackToTop';
+import Snow from '@std/components/Snow';
 
 export default async function Home() {
 
@@ -15,6 +16,7 @@ export default async function Home() {
 
   return (
     <div className='bg-background min-h-screen' id="top">
+      <Snow />
       <div className='max-w-6xl m-auto p-5'>
         <NavBar />
         <main className='mt-20 space-y-10 md:space-y-32'>
