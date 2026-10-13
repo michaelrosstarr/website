@@ -141,6 +141,7 @@ export const projects: Project[] = [
     tagline: "SSH and remote desktop, with an encrypted vault",
     description:
       "A desktop SSH, RDP, VNC and SFTP client with an end-to-end encrypted vault that syncs across your devices and can be shared with a team.",
+    url: "https://duo22.app",
     status: "In development",
     platforms: ["macOS", "Windows", "Linux"],
     stack: ["Tauri v2", "Rust", "Next.js", "Mantine", "xterm.js", "Hono", "Cloudflare Workers", "D1"],
