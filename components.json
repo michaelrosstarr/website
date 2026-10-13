@@ -17,5 +17,9 @@
     "lib": "@/lib",
     "hooks": "@/hooks"
   },
-  "iconLibrary": "lucide"
+  "iconLibrary": "lucide",
+  "registries": {
+    "@neobrutalism": "https://neobrutalism.com/r/radix/{name}.json",
+    "@neobrutalism-base": "https://neobrutalism.com/r/base/{name}.json"
+  }
 }
