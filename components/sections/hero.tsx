@@ -51,11 +51,11 @@ export function Hero() {
           <div aria-hidden className="absolute inset-0 -rotate-3 border-2 bg-primary shadow-lg" />
           <Image
             src="/profile.jpg"
-            alt={`${site.name} lying on the floor, smiling, nose to nose with a black-and-white dog`}
+            alt={`${site.name} smiling, with a black-and-white dog nuzzling in close`}
             fill
             priority
             sizes="(min-width: 1024px) 384px, (min-width: 640px) 384px, 320px"
-            className="border-2 object-cover object-[72%_center] shadow-xl"
+            className="border-2 object-cover object-[center_30%] shadow-xl"
           />
           <span className="absolute -top-5 -right-2 rotate-12 border-2 bg-green px-3 py-1 font-head text-sm text-black shadow-md sm:-right-6">
             aka {site.alias}
