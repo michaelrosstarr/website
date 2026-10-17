@@ -19,8 +19,7 @@ export function Projects() {
           {rest.map((project) => (
             <ProjectCard key={project.slug} project={project} />
           ))}
-          {/* Fills the empty cell when the grid ends on an odd card */}
-          {rest.length % 2 === 1 && github && (
+          {github && (
             <div className="flex flex-col items-start justify-center gap-4 border-2 border-dashed bg-grid p-8">
               <h3 className="text-3xl">More on GitHub</h3>
               <p className="text-base text-muted-foreground">
