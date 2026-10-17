@@ -170,6 +170,22 @@ export const projects: Project[] = [
     ],
     accent: "green",
   },
+  {
+    slug: "yada",
+    name: "YADA",
+    tagline: "Yet Another Data Application",
+    description:
+      "A local-first desktop database client for PostgreSQL, MySQL/MariaDB and SQLite, and an alternative to pgAdmin. Passwords stay in the OS credential store and all database I/O happens in Rust.",
+    status: "In development",
+    platforms: ["macOS", "Windows", "Linux"],
+    stack: ["Tauri v2", "Rust", "tokio-postgres", "Next.js", "Mantine", "CodeMirror", "TanStack Table"],
+    highlights: [
+      "SQL editor with FK-aware completion, formatting and \"did you mean\" fixes",
+      "Visual query builder that stays in sync with the SQL both ways",
+      "Table designer, Chen-notation ERDs and a sandboxed plugin system",
+    ],
+    accent: "orange",
+  },
 ]
 
 export type StackItem = {
