@@ -385,4 +385,24 @@ export const education: Qualification[] = [
   { school: "University of Pretoria", qualification: "BIS Multimedia", period: "2020 – 2023" },
 ]
 
+export type Volunteer = {
+  organization: string
+  role: string
+  /** Display strings, e.g. "Dec 2023"; no `end` means it's ongoing */
+  start: string
+  end?: string
+  cause?: string
+  description?: string
+}
+
+// Most recent first, from the LinkedIn profile
+export const volunteering: Volunteer[] = [
+  {
+    organization: "Waze",
+    role: "Level 4 volunteer editor",
+    start: "April 13, 2023",
+    description: "Across Southern Africa (Namibia, Botswana, Zimbabwe, South Africa, eSwatini)"
+  }
+]
+
 export const navLinks: { label: string; href: string }[] = []

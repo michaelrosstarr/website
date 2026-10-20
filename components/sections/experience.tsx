@@ -1,9 +1,9 @@
-import { ArrowUpRight, GraduationCap } from "lucide-react"
+import { ArrowUpRight, GraduationCap, HandHeart } from "lucide-react"
 
 import { SectionHeading } from "@/components/sections/section-heading"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { education, experience, socials, type Role } from "@/lib/data"
+import { education, experience, socials, volunteering, type Role } from "@/lib/data"
 import { cn } from "@/lib/utils"
 
 const linkedin = socials.find((social) => social.name === "LinkedIn")
@@ -37,6 +37,26 @@ export function Experience() {
                 ))}
               </ul>
             </div>
+            {volunteering.length > 0 && (
+              <div className="border-2 bg-card shadow-md">
+                <div className="flex items-center gap-2 border-b-2 bg-pink p-4 text-black">
+                  <HandHeart className="size-6" />
+                  <h3 className="text-xl">Volunteering</h3>
+                </div>
+                <ul className="divide-y-2">
+                  {volunteering.map((item) => (
+                    <li key={`${item.organization}-${item.role}`} className="p-4">
+                      <div className="font-head">{item.role}</div>
+                      <div className="mt-1 text-sm text-muted-foreground">
+                        {item.organization} · {item.start} – {item.end ?? "Present"}
+                      </div>
+                      {item.cause && <div className="mt-1 text-sm text-muted-foreground">{item.cause}</div>}
+                      {item.description && <p className="mt-2 text-sm">{item.description}</p>}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
             {linkedin && (
               <Button variant="outline" asChild className="w-full bg-card">
                 <a href={linkedin.href} target="_blank" rel="noopener noreferrer">
