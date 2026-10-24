@@ -399,9 +399,14 @@ export type Volunteer = {
 export const volunteering: Volunteer[] = [
   {
     organization: "Waze",
-    role: "Level 4 volunteer editor",
-    start: "April 13, 2023",
+    role: "Level 5 volunteer editor",
+    start: "April 2023",
     description: "Across Southern Africa (Namibia, Botswana, Zimbabwe, South Africa, eSwatini)"
+  },
+  {
+    organization: "East London Surf Lifesaving Club / Lifesaving South Africa",
+    role: "Examiner / Instructor",
+    start: "2021"
   }
 ]
 
