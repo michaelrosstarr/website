@@ -140,6 +140,32 @@
   ::selection {
     @apply bg-primary text-primary-foreground;
   }
+
+  /* NeoBrutalism scrollbar: yellow block thumb with a hard black outline */
+  ::-webkit-scrollbar {
+    width: 16px;
+    height: 16px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--muted);
+    border-left: 2px solid var(--border);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border: 2px solid var(--border);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-hover);
+  }
+  ::-webkit-scrollbar-corner {
+    background: var(--muted);
+  }
+  /* Firefox only; setting scrollbar-color in Chrome would override the rules above */
+  @supports not selector(::-webkit-scrollbar) {
+    * {
+      scrollbar-color: var(--primary) var(--muted);
+    }
+  }
 }
 
 @utility bg-grid {

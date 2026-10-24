@@ -194,88 +194,52 @@ export type StackItem = {
   icon: string
 }
 
-export type StackGroup = {
-  id: string
-  label: string
-  items: StackItem[]
-}
-
 const skill = (id: string) => `https://skillicons.dev/icons?i=${id}`
 // For tools skillicons doesn't have; rendered on a skillicons-style dark tile
 const simple = (slug: string, color: string) => `https://cdn.simpleicons.org/${slug}/${color}`
 
-export const stack: StackGroup[] = [
-  {
-    id: "languages",
-    label: "Languages",
-    items: [
-      { name: "TypeScript", href: "https://typescriptlang.org/", icon: skill("ts") },
-      { name: "JavaScript", href: "https://developer.mozilla.org/en-US/docs/Web/JavaScript", icon: skill("js") },
-      { name: "Rust", href: "https://rust-lang.org/", icon: skill("rust") },
-      { name: "Lua", href: "https://lua.org/", icon: skill("lua") },
-    ],
-  },
-  {
-    id: "frontend",
-    label: "Frontend",
-    items: [
-      { name: "React", href: "https://react.dev", icon: skill("react") },
-      { name: "Next.js", href: "https://nextjs.org", icon: skill("nextjs") },
-      { name: "TanStack", href: "https://tanstack.com", icon: simple("tanstack", "ff4154") },
-      { name: "Tailwind", href: "https://tailwindcss.com/", icon: skill("tailwind") },
-      { name: "shadcn/ui", href: "https://ui.shadcn.com", icon: simple("shadcnui", "ffffff") },
-      { name: "Mantine", href: "https://mantine.dev", icon: simple("mantine", "339af0") },
-    ],
-  },
-  {
-    id: "backend",
-    label: "Backend & Data",
-    items: [
-      { name: "Node.js", href: "https://nodejs.org/en", icon: skill("nodejs") },
-      { name: "Bun", href: "https://bun.sh/", icon: skill("bun") },
-      { name: "Deno", href: "https://deno.com/", icon: skill("deno") },
-      { name: "NestJS", href: "https://nestjs.com/", icon: skill("nestjs") },
-      { name: "Express", href: "https://expressjs.com/", icon: skill("express") },
-      { name: "Supabase", href: "https://supabase.com", icon: skill("supabase") },
-      { name: "Postgres", href: "https://postgresql.org", icon: skill("postgres") },
-      { name: "MongoDB", href: "https://mongodb.com/", icon: skill("mongodb") },
-      { name: "D1", href: "https://developers.cloudflare.com/d1/", icon: simple("cloudflare", "f38020") },
-      { name: "Firebase", href: "https://firebase.google.com/", icon: skill("firebase") },
-    ],
-  },
-  {
-    id: "cloud",
-    label: "Cloud & Infra",
-    items: [
-      { name: "Cloudflare", href: "https://cloudflare.com/", icon: skill("cloudflare") },
-      { name: "Workers", href: "https://workers.cloudflare.com/", icon: skill("workers") },
-      { name: "Docker", href: "https://docker.com/", icon: skill("docker") },
-      { name: "Kubernetes", href: "https://kubernetes.io", icon: skill("kubernetes") },
-      { name: "Flux", href: "https://fluxcd.io", icon: simple("flux", "5468ff") },
-      { name: "Vercel", href: "https://vercel.com", icon: skill("vercel") },
-      { name: "AWS", href: "https://aws.amazon.com", icon: skill("aws") },
-      { name: "Azure", href: "https://azure.microsoft.com/en-us", icon: skill("azure") },
-      { name: "GCP", href: "https://cloud.google.com/", icon: skill("gcp") },
-    ],
-  },
-  {
-    id: "apps",
-    label: "Desktop & Mobile",
-    items: [
-      { name: "Tauri", href: "https://tauri.app", icon: skill("tauri") },
-      { name: "Capacitor", href: "https://capacitorjs.com", icon: simple("capacitor", "119eff") },
-      { name: "Unity", href: "https://unity.com", icon: skill("unity") },
-    ],
-  },
-  {
-    id: "tooling",
-    label: "Tooling",
-    items: [
-      { name: "GitHub", href: "https://github.com/", icon: skill("github") },
-      { name: "Sentry", href: "https://sentry.io", icon: skill("sentry") },
-      { name: "PostHog", href: "https://posthog.com", icon: simple("posthog", "f9bd2b") },
-    ],
-  },
+export const stack: StackItem[] = [
+  // Languages
+  { name: "TypeScript", href: "https://typescriptlang.org/", icon: skill("ts") },
+  { name: "JavaScript", href: "https://developer.mozilla.org/en-US/docs/Web/JavaScript", icon: skill("js") },
+  { name: "Rust", href: "https://rust-lang.org/", icon: skill("rust") },
+  { name: "Lua", href: "https://lua.org/", icon: skill("lua") },
+  // Frontend
+  { name: "React", href: "https://react.dev", icon: skill("react") },
+  { name: "Next.js", href: "https://nextjs.org", icon: skill("nextjs") },
+  { name: "TanStack", href: "https://tanstack.com", icon: simple("tanstack", "ff4154") },
+  { name: "Tailwind", href: "https://tailwindcss.com/", icon: skill("tailwind") },
+  { name: "shadcn/ui", href: "https://ui.shadcn.com", icon: simple("shadcnui", "ffffff") },
+  { name: "Mantine", href: "https://mantine.dev", icon: simple("mantine", "339af0") },
+  // Backend & Data
+  { name: "Node.js", href: "https://nodejs.org/en", icon: skill("nodejs") },
+  { name: "Bun", href: "https://bun.sh/", icon: skill("bun") },
+  { name: "Deno", href: "https://deno.com/", icon: skill("deno") },
+  { name: "NestJS", href: "https://nestjs.com/", icon: skill("nestjs") },
+  { name: "Express", href: "https://expressjs.com/", icon: skill("express") },
+  { name: "Django", href: "https://djangoproject.com/", icon: skill("django") },
+  { name: "Supabase", href: "https://supabase.com", icon: skill("supabase") },
+  { name: "Postgres", href: "https://postgresql.org", icon: skill("postgres") },
+  { name: "MongoDB", href: "https://mongodb.com/", icon: skill("mongodb") },
+  { name: "D1", href: "https://developers.cloudflare.com/d1/", icon: simple("cloudflare", "f38020") },
+  { name: "Firebase", href: "https://firebase.google.com/", icon: skill("firebase") },
+  // Cloud & Infra
+  { name: "Cloudflare", href: "https://cloudflare.com/", icon: skill("cloudflare") },
+  { name: "Workers", href: "https://workers.cloudflare.com/", icon: skill("workers") },
+  { name: "Docker", href: "https://docker.com/", icon: skill("docker") },
+  { name: "Kubernetes", href: "https://kubernetes.io", icon: skill("kubernetes") },
+  { name: "Vercel", href: "https://vercel.com", icon: skill("vercel") },
+  { name: "AWS", href: "https://aws.amazon.com", icon: skill("aws") },
+  { name: "Azure", href: "https://azure.microsoft.com/en-us", icon: skill("azure") },
+  { name: "GCP", href: "https://cloud.google.com/", icon: skill("gcp") },
+  // Desktop & Mobile
+  { name: "Tauri", href: "https://tauri.app", icon: skill("tauri") },
+  { name: "Capacitor", href: "https://capacitorjs.com", icon: simple("capacitor", "119eff") },
+  { name: "Unity", href: "https://unity.com", icon: skill("unity") },
+  // Tooling
+  { name: "GitHub", href: "https://github.com/", icon: skill("github") },
+  { name: "Sentry", href: "https://sentry.io", icon: skill("sentry") },
+  { name: "PostHog", href: "https://posthog.com", icon: simple("posthog", "f9bd2b") },
 ]
 
 export type Social = {
@@ -381,7 +345,7 @@ export type Qualification = {
 }
 
 export const education: Qualification[] = [
-  { school: "University of Pretoria", qualification: "BIS (Hons) Multimedia", period: "2024" },
+  { school: "University of Pretoria", qualification: "BIS (Hons) Multimedia, cum laude", period: "2024" },
   { school: "University of Pretoria", qualification: "BIS Multimedia", period: "2020 – 2023" },
 ]
 
