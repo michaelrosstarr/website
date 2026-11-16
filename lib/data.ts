@@ -81,6 +81,11 @@ export const projects: Project[] = [
         url: "https://sync.wmekit.com",
       },
       {
+        name: "WME HVR",
+        description: "Turns Waze's daily High Volume report emails into per-editor history and charts, posted to Discord, Slack and Telegram.",
+        url: "https://hvr.wmekit.com",
+      },
+      {
         name: "WMEKit Account",
         description: "One sign-in for every WMEKit app: Better Auth with passkeys, Discord and 2FA.",
         url: "https://auth.wmekit.com",
